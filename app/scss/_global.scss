@@ -3,13 +3,13 @@ body {
   font-size: 16px;    
 }
 
-.wrapper {
+.container {
   max-width: 1800px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.container {
+.container__small {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -20,6 +20,6 @@ body {
   @extend %rubik-400;
   color: #7b7b7b;
   font-size: 14px;
-  line-height: 32px;
+  line-height: 24px;
 }
 

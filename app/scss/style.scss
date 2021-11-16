@@ -36,13 +36,13 @@
   display: flex;
     
  &__search  {
-   background-color: #edf1f4;
+   background-color: rgba(163, 187, 200, 0.2);
    width: 50px;
    border-radius: 50%;
  }
 
  &__circle {
-   background-color: #a3bbc8;
+   background-color: $green;
    width: 50px;
    border-radius: 50%;
    margin-left: 20px;
@@ -98,6 +98,116 @@
     left: 28px; 
     text-align: center;    
   }
+}
+
+.footer {
+  &__logo {
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+
+.footer-top {
+  
+  &__inner {
+    display: flex;
+    padding: 80px 0 75px;
+    border-bottom: 1px solid $green;
+  }
+
+  &__contact {
+    width: 200px;
+    margin-right: 100px;
+  }
+
+  &__contact-list {
+    margin-bottom: 10px;
+  }
+ 
+  &__contact-text {
+    display: inline-block;
+    text-transform: uppercase
+  }
+
+  &__services {
+    width: 150px;
+    margin-right: 150px;
+  }
+
+  &__servises-item {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    @extend %dmsans-700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #1f2044;
+    text-transform: uppercase;
+    margin: 10px 0 20px;
+  }
+  
+  &__account {    
+    width: 100px;
+    margin-right: 200px;
+  }
+
+  &__account-item {
+    margin-bottom: 10px;
+  }
+  
+  &__newsletter {
+    max-width: 270px;    
+  }
+
+  &__text {
+    line-height: 24px;
+    margin-bottom: 38px;
+  }
+
+  &__form {
+    display: flex;
+    @extend %dmsans-400;
+    font-size: 14px;
+    line-height: 21px;
+    @extend %dmsans-400;
+
+  }
+
+  &__form-input {    
+    border: none;
+    max-width: 170px;
+    width: 100%;
+    @extend %dmsans-400;
+    font-size: 12px;
+    background-color:$pink;      
+    color: #234969;
+    padding: 14px 10px 15px 16px; 
+  }
+
+  &__form-input::placeholder {
+    @extend %dmsans-400;
+    font-size: 12px;
+    color: #234969;
+  }
+
+  &__form-btn {
+    border: none;
+    background-color: $green;    
+    color: #fff;  
+    cursor: pointer;
+padding: 14px 19px 16px;  }
+}
+
+.footer-bottom {
+
+  &__copy {}
+
+  &__menu {}
+
+  &__menu-list {}
+
+  &__menu-link {}
 }
 
 
