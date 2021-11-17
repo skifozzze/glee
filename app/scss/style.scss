@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
@@ -228,6 +229,60 @@
    position: absolute;
   }
 }
+
+.top-slider {
+
+  &__inner {}
+
+  &__inner-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__inner-description {}
+
+  &__title {
+    // width: 406px;
+    @extend %rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    color: #243f4d;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    width: 360px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #436372;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    justify-content: space-between;
+    width: 200px;
+    height: 60px;
+    background-color: $green;
+    font-size: 15px;
+    line-height: 12px;
+    color: #fff;
+    padding: 21px 19px 21px 27px;
+  }
+
+  // &__btn-link {
+  //   font-size: 15px;
+  //   line-height: 12px;
+  //   color: #fff;    
+  // }
+
+  &__btn-img {
+    display: inline-block;
+    margin-left: 58px;
+  }
+
+  &__inner-images {}
+}
+
 
 
 
