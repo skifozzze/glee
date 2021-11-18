@@ -358,56 +358,119 @@
 .products {  
 
   &__inner {
-    padding: 100px 0; 
+    padding: 70px 0 186px; 
   }
 
   &__title {
     text-align: center;
-    margin-bottom: 30px;
+    @extend %dmsans-700;
+    font-size: 36px;
+    margin-bottom: 40px;
   }
 
   &__button {
-    text-align: center;
-    margin-bottom: 30px;
-    
+    text-align: center;       
+    margin-bottom: 30px;    
   }
 
+  
   &__btn {
+    padding: 0;
     border: none;
     background-color: transparent;
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: #8b8b8b;
+    margin: 0 15px;
+    text-transform: capitalize;
     cursor: pointer;
   }
 
   &__images {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 15px;
-    
+    grid-template-rows: 380px 380px;
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;    
   }
 
   &__images-item {
-    padding: 30px 10px;
+    padding: 27px 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;    
     text-align: center;
-    background-color: blue;
+    background-color:#fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
   }
+
+   &__images-item:hover .customer__panel {
+     display: block;    
+   }
 
   &__images-link {}
 
   &__images-image {
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
   }
 
-  &__images-name {}
+  &__images-name {
+    @extend %dmsans-500;
+    font-size: 16px;
+    line-height: 40px;
+    color: #243f4d    
+  }
 
-  &__images-price {}
+  &__images-price {
+    @extend %dmsans-700;
+    font-size: 16px;
+    line-height: 40px;
+    color: #a3bbc8;
+  }
 }
 
-.container {
+.customer__panel {
+  // display: none;
+  position: relative  ;
+  &__icon-search {   
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    bottom:23px;
+  }
+  &__icon-cart {    
+    display: inline-block;
+    position: absolute;
+    left: 63px;
+    bottom: 23px;
+  }
 
-  &__small {}
+  &__icon-heart {    
+    display: inline-block;
+    position: absolute;
+    left: 123px;
+    bottom: 23px;
+  }
+  &__icon-search:hover {
+     .cls-1 {
+       fill: #a3bbc8;
+       
+     }
+
+     .cls-2 {
+       fill: #fff;
+       
+     }
+  }
+
 }
+
+.mixitup-control-active {
+  color: #1a1a1a;
+}
+
+
 
 .title {}
 
