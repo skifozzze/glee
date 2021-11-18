@@ -207,13 +207,13 @@
     display: flex;       
   }
 
-  &__menu-link {
+  &__menu-item {
     margin-left: 30px;
     line-height: 32px;
     position: relative;    
   }
 
-  &__menu-link + &__menu-link::before {
+  &__menu-item + &__menu-item::before {
    content: '';
    width: 1px;
    height: 17px;
