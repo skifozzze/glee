@@ -1,6 +1,7 @@
 $accent: #436372;
 $pink: rgba(252, 215, 182, 0.2);
 $green: #a3bbc8;
+$title: #243f4d;
 
 %arrow__btn {
   background-color: $green;
@@ -14,7 +15,7 @@ $green: #a3bbc8;
   text-align: center;
   @extend %dmsans-700;
   font-size: 36px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 %products__button {
