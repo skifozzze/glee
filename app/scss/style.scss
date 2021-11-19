@@ -329,8 +329,7 @@
     width: 1px;
     height: 171px;
     background-color: #243f4d;
-    opacity: 0.1;
-    // top: -48px;
+    opacity: 0.1;    
     left: -50px;    
     position: absolute;
   }
@@ -356,34 +355,21 @@
 }
 
 .products {  
-
   &__inner {
-    padding: 70px 0 186px; 
+    padding: 70px 0 186px;   
   }
 
   &__title {
-    text-align: center;
-    @extend %dmsans-700;
-    font-size: 36px;
-    margin-bottom: 40px;
+  @extend %title;
   }
 
   &__button {
     text-align: center;       
     margin-bottom: 30px;    
   }
-
   
   &__btn {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    @extend %dmsans-700;
-    font-size: 16px;
-    color: #8b8b8b;
-    margin: 0 15px;
-    text-transform: capitalize;
-    cursor: pointer;
+    @extend %products__button;
   }
 
   &__images {
@@ -391,28 +377,30 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 380px 380px;
     grid-column-gap: 30px;
-    grid-row-gap: 40px;    
+    grid-row-gap: 40px;        
   }
 
   &__images-item {
-    padding: 27px 15px 20px;
+    padding: 27px 15px 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;    
     text-align: center;
     background-color:#fff;
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    overflow: hidden;    
   }
 
-   &__images-item:hover .customer__panel {
-     display: block;    
-   }
-
-  &__images-link {}
+ &__images-item:hover {
+    .customer-pannel {
+     transform: translateY(0);
+    }
+ }
 
   &__images-image {
     display: inline-block;
     margin-bottom: 45px;
+    object-fit: cover;
   }
 
   &__images-name {
@@ -428,42 +416,41 @@
     line-height: 40px;
     color: #a3bbc8;
   }
+
+  &__images-item__inner {
+    position: relative;
+  }
 }
 
-.customer__panel {
-  // display: none;
-  position: relative  ;
-  &__icon-search {   
-    display: inline-block;
-    position: absolute;
-    left: 0px;
-    bottom:23px;
-  }
-  &__icon-cart {    
-    display: inline-block;
-    position: absolute;
-    left: 63px;
-    bottom: 23px;
-  }
-
-  &__icon-heart {    
-    display: inline-block;
-    position: absolute;
-    left: 123px;
-    bottom: 23px;
-  }
-  &__icon-search:hover {
-     .cls-1 {
-       fill: #a3bbc8;
-       
-     }
-
-     .cls-2 {
-       fill: #fff;
-       
-     }
+.customer-pannel {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  transform: translateY(500%); 
+  transition: all .5s;
+  
+  &__link {
+    display: block;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fff;
   }
 
+  &__link {
+   path {
+    transition: all .3s;}
+  }
+
+  &__link:hover {
+    path {
+      fill: #fff;
+    }
+    background-color: $green;    
+  }
 }
 
 .mixitup-control-active {
@@ -472,7 +459,6 @@
 
 
 
-.title {}
 
 
 
