@@ -1,6 +1,34 @@
 $accent: #436372;
 $pink: rgba(252, 215, 182, 0.2);
 $green: #a3bbc8;
+$title: #243f4d;
+
+%arrow__btn {
+  background-color: $green;
+  font-size: 15px;
+  color: #fff;
+  padding: 21px 19px 21px 27px;
+  display: inline-block;
+}
+
+%title {
+  text-align: center;
+  @extend %dmsans-700;
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+
+%products__button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  @extend %dmsans-700;
+  font-size: 16px;
+  color: #8b8b8b;
+  margin: 0 15px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
 
 %rubik-500 {
   font-family: 'Rubik-Medium',sans-serif;
