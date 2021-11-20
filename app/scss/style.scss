@@ -461,24 +461,26 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);     
     grid-column-gap: 30px;
-
   }
 
   &__item {
-    position: relative;   
+    display: flex;
+    justify-content: center ; 
+    background-color: rgba(252, 215, 182, 0.4);
   }
 
   &__item-img {
-    position: absolute;
-    left: 120px;
-    bottom: 80px;
-  } 
-
+    margin-top: -87px;
+    margin-right: 20px;
+  }
+  
   &__item-description {
-   background-color: rgba(252, 215, 182, 0.4);     
-   height: 390px;
-   padding-top: 90px;
-   padding-left: 390px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    margin-right: 20px;
   }
 
   &__item-description__title {
