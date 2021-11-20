@@ -654,7 +654,7 @@ background-position: top center;
   }
 
   &__main-subtitle {
-    padding: 15px;
+    padding: 15px 0;
     margin-left: 30px;
     width: 315px;
     font-size: 12px;
@@ -664,14 +664,7 @@ background-position: top center;
     span {
       margin-left: 30px;
     }
-  }
-
-  // &__main-subtitle::before {
-  //   content: '';
-  //   width: 315px;
-  //   height: 1px;
-  //   color: #e0e0e0
-  // }
+  } 
 }
 
 
