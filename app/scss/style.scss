@@ -224,6 +224,22 @@
   }
 }
 
+.top {
+  background-color: rgba(163, 187, 200, .2);
+  &__inner {
+   text-align: center; 
+   padding: 35px 0 34px;
+  }
+
+  &__title {
+    @extend %rubik-300;
+    font-size: 36px;
+    line-height: 24px;
+    color: #222933;
+    margin-bottom: 10px;
+  }
+}
+
 .top-slider {
   background-image: url(../images/slider-bg.png);
   background-repeat: no-repeat;
@@ -298,6 +314,7 @@
       @extend %rubik-500;
       font-size: 11px;
       line-height: 8.5px;
+      cursor: pointer;
     }
     &.slick-active {
       button {
@@ -361,7 +378,7 @@
   }
 
   &__title {
-  @extend %title;
+   margin-bottom: 35px;
   }
 
   &__button {
@@ -524,10 +541,8 @@
     padding: 100px 0 120px;    
   }
 
-  &__title {
-    @extend %title;
-    margin-bottom: 30px;
-    color: #1a1a1a;
+  &__title {    
+    margin-bottom: 25px;  
   }
 
   &__button {
@@ -589,12 +604,7 @@ background-position: top center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 45px;
-  }
-
-  &__title {
-    @extend %title;   
-    color: #1a1a1a;
+    margin-bottom: 41px;
   }
 
   &__link {
@@ -665,6 +675,10 @@ background-position: top center;
  &__inner {
    height: 437px;
    margin-top: -171px;
+   &__login {
+     height: 251px;
+     margin-top: 0;
+   }
  }
 
  &__list {
@@ -672,8 +686,77 @@ background-position: top center;
   justify-content: space-around;
   align-items: center;
   padding-top: 264px;
+  &__login {
+   padding: 78px 0 90px;
+  }
  }
 }
+
+.modal {
+  &__inner {
+    margin: 0 auto;
+    padding: 120px 0;
+    max-width: 470px;
+    width: 100%;
+    align-items: center;
+  }  
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding: 0 15px;
+    border: 2px solid  #f6f6f6; 
+    &-email {
+      margin: 12px 0 25px;
+    }   
+    &-password {
+      margin: 12px 0 35px;
+    }
+  }
+
+  &__label {
+   color: $accent;      
+  }
+
+  &__btn-login {
+    padding: 20px 0;    
+    border: none;
+    background-color: $green;
+    @extend %rubik-500;
+    font-size: 18px;
+    color:#fffefe;    
+    width: 100%;   
+    cursor: pointer;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__help {    
+    display: block;
+    text-align: center;
+    padding: 33px 0 24px;
+    border-top: 2px solid #f6f6f6;
+  }
+
+  &__btn-create {
+    padding: 20px 0;
+    border:2px solid $green;
+    @extend %rubik-500;
+    font-size: 18px;
+    color: $title;
+    width: 100%;
+    cursor: pointer;    
+    background-color: #fff;
+  }
+  
+}
+
 
 
 

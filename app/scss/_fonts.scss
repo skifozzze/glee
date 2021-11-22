@@ -49,6 +49,16 @@
 }
 
 @font-face {
+  font-family: 'Rubik-Ligth';
+  font-weight: 300;
+  font-style: normal;
+  src: local('Rubik-Ligth'),
+    url('../fonts/Rubik-Ligth.woff2') format('woff2'),
+    url('../fonts/Rubik-Ligth.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Poppins-Bold';
   font-weight: 700;
   font-style: normal;

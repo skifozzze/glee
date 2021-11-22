@@ -27,10 +27,54 @@ body {
 }
 
 .footer, 
-.footer a {
+.footer a,
+.modal__label {
   @extend %rubik-400;
   color: #7b7b7b;
   font-size: 14px;
   line-height: 24px;
+}
+
+.title {
+  text-align: center;
+  @extend %dmsans-700;
+  font-size: 36px;
+  color: #1a1a1a;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  &__list {
+    display: flex;    
+  }
+
+  &__item+&__item {
+    margin-left: 20px;
+  } 
+
+  &__item {
+    position: relative;
+    &::after {
+      content: '/';
+      color: rgba(34, 41, 51, 0.6);
+      position: absolute;
+      top: 3px;
+      right: -14px;
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link{
+    text-decoration: none;    
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(34, 41, 51, 0.6);
+  }
 }
 

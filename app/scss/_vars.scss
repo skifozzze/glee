@@ -11,12 +11,6 @@ $title: #243f4d;
   display: inline-block;
 }
 
-%title {
-  text-align: center;
-  @extend %dmsans-700;
-  font-size: 36px; 
-}
-
 %prod__button {
   padding: 0;
   border: none;
@@ -37,6 +31,11 @@ $title: #243f4d;
 %rubik-400 {
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
+}
+
+%rubik-300 {
+  font-family: 'Rubik-Light', sans-serif;
+  font-weight: 300;
 }
 
 %dmsans-700 {
