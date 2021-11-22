@@ -27,7 +27,8 @@ body {
 }
 
 .footer, 
-.footer a {
+.footer a,
+.modal__label {
   @extend %rubik-400;
   color: #7b7b7b;
   font-size: 14px;
