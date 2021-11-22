@@ -46,7 +46,6 @@ body {
   justify-content: center;
   &__list {
     display: flex;    
-    // justify-content: center;
   }
 
   &__item+&__item {
@@ -57,22 +56,24 @@ body {
     position: relative;
     &::after {
       content: '/';
+      color: rgba(34, 41, 51, 0.6);
       position: absolute;
-      top: 0;
-      right: -15px;
+      top: 3px;
+      right: -14px;
     }
     &:last-child {
       &::after {
         display: none;
       }
     }
-
   }
 
   &__link{
-    text-decoration: none;
-    cursor: pointer;
-    color: red;
+    text-decoration: none;    
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(34, 41, 51, 0.6);
   }
 }
 
