@@ -34,3 +34,45 @@ body {
   line-height: 24px;
 }
 
+.title {
+  text-align: center;
+  @extend %dmsans-700;
+  font-size: 36px;
+  color: #1a1a1a;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  &__list {
+    display: flex;    
+    // justify-content: center;
+  }
+
+  &__item+&__item {
+    margin-left: 20px;
+  } 
+
+  &__item {
+    position: relative;
+    &::after {
+      content: '/';
+      position: absolute;
+      top: 0;
+      right: -15px;
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+
+  }
+
+  &__link{
+    text-decoration: none;
+    cursor: pointer;
+    color: red;
+  }
+}
+
