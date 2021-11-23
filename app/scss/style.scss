@@ -969,6 +969,34 @@ background-position: top center;
   }
 }
 
+.terms {
+ max-width: 1400px;
+ margin: 0 auto;
+ padding: 0 15px;
+
+  &__inner {
+    padding: 100px 0;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__item-title {
+    margin-bottom: 15px;
+  }
+
+  &__item-list {
+    padding-left: 30px;
+    list-style-type: decimal-leading-zero;
+  }
+
+  &__item-text {
+    margin-bottom: 20px;
+  }
+}
+
+
 
 
 
