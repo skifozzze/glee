@@ -799,8 +799,20 @@ background-position: top center;
     color: $title;   
   }
 
-  &__description {}
+  &__description {
+    position: relative;
+  }
 
+  &__description::after {
+    content: "";
+    width: 500px;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    bottom: -64px;
+    left: 0px;
+  }
+  
   &__description-title {
     @extend %dmsans-700;
     font-size: 36px;
@@ -818,12 +830,26 @@ background-position: top center;
   &__bottom {
     display: flex;
     justify-content: space-between;
-    
+    padding-top: 30px;    
   }
 
   &__bottom-box {
-    display: flex;
+    display: flex;    
+    padding-right: 30px;
+    border-right: 2px solid red;
+    &:last-child {
+      border-right: none;
+    }
   }
+
+  // &__bottom-box + &__bottom-box::after {
+  //   content: '';
+  //   position: absolute;
+  //   width: 2px;
+  //   height: 70px;
+  //   background-color: red;
+  //   left: -30px;
+  // }
 
   &__bottom-image {
     margin-right: 20px;
@@ -843,7 +869,105 @@ background-position: top center;
   }
 }
 
+.info {
+ background-color:$pink;
+ padding: 100px 0;
+  &__items {
+    display: flex;
+    justify-content: space-around;
+  }
 
+  &__item {    
+    text-align: center;
+  }
+
+  &__item-image {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  &__item-numbers {
+    
+    span {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+}
+
+.team {
+  &__inner {
+    padding: 50px 0;
+    display: flex;  
+    justify-content: space-between;  
+  }
+
+  &__descr {
+    max-width: 300px;
+    width: 100%;    
+  }
+
+  &__descr-title {
+    margin-bottom: 20px;
+  }
+
+  &__descr-text {
+    margin-bottom: 20px;
+  }
+
+  &__descr-btn {
+    background-color: $green;
+    font-size: 15px;
+    color: #fff;
+    padding: 21px 19px 21px 27px;
+    width: 200px;
+    height: 60px;
+    display: inline-block;
+  }
+
+  &__descr-btn__img {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  &__photo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+  }
+
+  &__photo-item {
+    position: relative;
+  }
+
+  &__photo-img {}
+
+  &__photo-info {
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    background-color: red;
+    position: absolute;
+    bottom: -50px;
+  }
+
+  &__photo-title {
+    margin-bottom: 10px;    
+  }
+
+  &__photo-subtitle {display: block;}
+
+  &__photo-social {
+    display: flex;
+  }
+
+  &__photo-social__link {
+    padding: 0 5px;
+  }
+}
 
 
 
