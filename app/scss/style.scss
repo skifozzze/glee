@@ -975,13 +975,13 @@ background-position: top center;
     color: #565872;
     display: block;
   }
-
+ 
   &__photo-social {
     display: flex;
   }
-
-  &__photo-social__link {
-    padding: 0 3px;
+  
+ &__photo-social__item {
+    margin: 0 3px;
   }
 }
 
