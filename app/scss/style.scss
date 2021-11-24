@@ -1013,6 +1013,66 @@ background-position: top center;
 }
 
 
+.product {
+  &__inner {
+    padding: 120px 0;
+  }
+
+  &__filter {}
+
+  &__content {}
+}
+
+.filter {
+  max-width: 270px;
+  width: 100%;
+
+  &__category,
+  &__brand { 
+    margin-bottom: 60px;   
+  }
+
+  &__title {
+    text-transform: uppercase;
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $body;
+    margin-bottom: 25px;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 39px;
+      height: 3px;
+      top: 8px;
+      right: -53px;;
+      background-color: $green;
+      position: absolute;
+    }
+  }
+  
+  &__btn {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-radius: 5px;
+    padding: 0 15px 0 10px;
+    width: 270px;
+    line-height: 43px;
+    color: $body;
+    transition: all .3s; 
+    background-color: #fff;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(163, 187, 200, .2);
+    }
+  }  
+
+}
+
+
 
 
 
