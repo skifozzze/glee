@@ -88,7 +88,7 @@
         <div class="product__inner">
 
           <div class="product__filter filter">
-            <div class="filter__category">
+            <div class="filter-category">
               <h4 class="filter__title">CATEGORY</h4>
               <nav class="filter__category-menu">
                 <ul class="filter__category-list">
@@ -121,12 +121,19 @@
               </nav>
             </div>
 
-            <div class="filter__price">
+            <div class="filter-price">
               <h4 class="filter__title">PRICE</h4>
+              <form class="price__form" action="#">
+                <input class="price__input" type="text" data-min="0" data-max="1000" data-from="100" data-to="500">
+                <label class="price__label">
+                  <p class="price__sum">$<span class="price__label-from"></span></p>
+                  <p class="price__sum">$<span class="price__label-to"></span></p>
+                </label>
 
+              </form>
             </div>
 
-            <div class="filter__brand">
+            <div class="filter-brand">
               <h4 class="filter__title">BRAND</h4>
               <nav class="filter__brand-menu">
                 <ul class="filter__brand-list">
@@ -159,11 +166,19 @@
               </nav>
             </div>
 
-            <div class="filter__products">
+            <div class="filter-recent">
               <h4 class="filter__title">RECENT PRODUCTS</h4>
-              <div class="products__inner">
-                <img class="products__image" src="" alt="">
-                <div class="products__description"></div>
+              <div class="recent__inner">
+                <a class="recent__image" href="#">
+                  <img class="recent__img" src="images/recent/1.png" alt="Product icon.">
+                </a>
+                <div class="recent__description">
+                  <a class="recent__description-title" href="#">
+                    <h6 class="recent__description-text">Pendant lamp</h6>
+                  </a>
+                  <div class="star" data-rateyo-rating='4'></div>
+                  <h5 class="recent__description-sum">23$</h5>
+                </div>
               </div>
             </div>
 
@@ -171,7 +186,7 @@
           </div>
 
 
-          <div class="product__content"></div>
+          <div class="product__content content"></div>
         </div>
       </div>
     </section>
