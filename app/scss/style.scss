@@ -83,8 +83,7 @@
     position: absolute;
     height: 16px;
     width: 16px;
-    background-color: #fff;
-    color: $title;
+    background-color: #fff;  
     @extend %dmsans-400;
     font-size: 10px;
     line-height: 18px;
@@ -262,8 +261,7 @@
     max-width: 525px;
     @extend %rubik-500;
     font-size: 72px;
-    line-height: 70px;
-    color: $title;
+    line-height: 70px;    
     margin-bottom: 40px;
   }
 
@@ -346,7 +344,7 @@
     content: '';
     width: 1px;
     height: 171px;
-    background-color: $title;
+    background-color: $body;
     opacity: 0.1;    
     left: -50px;    
     position: absolute;
@@ -425,8 +423,7 @@
   &__images-name {
     @extend %dmsans-500;
     font-size: 16px;
-    line-height: 40px;
-    color: $title;
+    line-height: 40px;    
   }
 
   &__images-price {
@@ -503,15 +500,13 @@
     @extend %dmsans-700;
     font-size: 26px;
     line-height: 32px;
-    width: 250px;
-    color: $title;
+    width: 250px;    
     margin-bottom: 20px;
   }
 
   &__item-description__text {
     line-height: 30px;
-    width: 329px;
-    color: $title;
+    width: 329px;  
     margin-bottom: 35px;
   }
 
@@ -619,8 +614,7 @@ background-position: top center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
-    grid-template-rows: 420px;
-    
+    grid-template-rows: 420px;    
   }
 
   &__main-item {
@@ -665,8 +659,13 @@ background-position: top center;
     border-top: 1px solid #e0e0e0;
     span {
       margin-left: 30px;
+      color: #222933;
     }
   } 
+
+  &__main-autor {
+    color: #222933;
+  }
 }
 
 .partner {
@@ -748,8 +747,7 @@ background-position: top center;
     padding: 20px 0;
     border:2px solid $green;
     @extend %rubik-500;
-    font-size: 18px;
-    color: $title;
+    font-size: 18px;    
     width: 100%;
     cursor: pointer;    
     background-color: #fff;
@@ -757,7 +755,6 @@ background-position: top center;
 }
 
 .mission {
-
   &__inner {
     padding: 120px 0;
     display: flex;
@@ -794,8 +791,7 @@ background-position: top center;
   &__top-text {
     @extend %rubik-400;
     font-size: 16px;
-    line-height: 30px;
-    color: $title;   
+    line-height: 30px;    
   }
 
   &__description {
@@ -815,14 +811,12 @@ background-position: top center;
   &__description-title {
     @extend %dmsans-700;
     font-size: 36px;
-    line-height: 32px;
-    color: $title;
+    line-height: 32px;    
     margin-bottom: 50px;
   }
 
   &__description-text {
-    line-height: 30px;
-    color: $title;
+    line-height: 30px;  
     margin-bottom: 64px;
   }
 
@@ -848,8 +842,7 @@ background-position: top center;
   &__bottom-numbers {
     @extend %dmsans-700;
     font-size: 36px;
-    line-height: 38px;
-    color: $title;    
+    line-height: 38px;       
     span {
       display: block;
       font-size: 16px;
@@ -880,8 +873,7 @@ background-position: top center;
   &__item-numbers {
     @extend %dmsans-700;
     font-size: 36px;
-    line-height: 32px;
-    color: $title;
+    line-height: 32px;    
     span {
       display: block;
       margin-top: 10px;
@@ -906,14 +898,12 @@ background-position: top center;
   &__descr-title {
     @extend %dmsans-700;
     font-size: 36px;
-    line-height: 32px;
-    color: $title;
+    line-height: 32px;    
     margin-bottom: 35px
   }
 
   &__descr-text {
-    line-height: 30px;
-    color: $title;
+    line-height: 30px;  
     margin-bottom: 40px;
   }
 
@@ -975,13 +965,13 @@ background-position: top center;
     color: #565872;
     display: block;
   }
-
+ 
   &__photo-social {
     display: flex;
   }
-
-  &__photo-social__link {
-    padding: 0 3px;
+  
+ &__photo-social__item {
+    margin: 0 3px;
   }
 }
 
@@ -1004,8 +994,7 @@ background-position: top center;
   &__item-title {
     @extend %rubik-500;
     font-size: 24px;
-    line-height: 40px;
-    color: $title;
+    line-height: 40px;    
     margin-bottom: 30px;
   }
 
@@ -1015,14 +1004,150 @@ background-position: top center;
   }
 
   &__item-text {
-    line-height: 30px;
-    color: $title;
+    line-height: 30px;    
     margin-bottom: 30px;
     &:last-child {
       margin-bottom: 0;
     }
   }
 }
+
+
+.product {
+  &__inner {
+    padding: 120px 0;
+  }
+
+  &__filter {}
+
+  &__content {}
+}
+
+.filter {
+  max-width: 270px;
+  width: 100%;
+
+  &-category {
+    margin-bottom: 75px;
+  }
+  
+  &-brand { 
+    margin-bottom: 70px;   
+  }
+
+  &-price {
+    margin-bottom: 80px;
+  }
+
+  // &-price {
+  //   margin-bottom: 85px;
+  // }
+
+  &__title {
+    text-transform: uppercase;
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $body;
+    margin-bottom: 25px;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 39px;
+      height: 3px;
+      top: 8px;
+      right: -53px;;
+      background-color: $green;
+      position: absolute;
+    }
+  }
+  
+  &__btn {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-radius: 5px;
+    padding: 0 15px 0 10px;
+    width: 270px;
+    line-height: 43px;
+    color: $body;
+    transition: all .3s; 
+    background-color: #fff;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(163, 187, 200, .2);
+    }
+  }  
+}
+
+.price {
+  
+  &__label {
+ display: flex;
+ justify-content: space-between;
+  // &-sum {
+  //   font-size: 14px;
+  //   line-height: 34px;
+  // }
+ }
+}
+
+.irs--flat .irs-line {
+  top: 15px;
+  height: 3px;
+  background-color: rgba(163, 187, 200, .66);
+  border-radius: 1px;
+}
+
+.irs--flat .irs-handle {
+  top: 9px;
+  width: 15px;
+  height: 15px;
+  background-color: $green;
+}
+
+.irs--flat .irs-handle>i:first-child {
+  display: none;
+}
+
+.irs--flat .irs-bar {
+  top: 15px;
+  height: 4px;
+  background-color: $green;
+}
+
+.irs--flat .irs-min, 
+.irs--flat .irs-max,
+.irs--flat .irs-from, 
+.irs--flat .irs-to, 
+.irs--flat .irs-single
+{
+  display: none;
+}
+
+.recent {
+
+  &__inner {}
+
+  &__image {}
+
+  &__img {}
+
+  &__description {}
+
+  &__description-title {}
+
+  &__description-text {}
+
+  &__description-sum {}
+}
+
+.star {
+  padding: 0;
+}
+
 
 
 
