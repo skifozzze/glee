@@ -1014,6 +1014,8 @@ background-position: top center;
 
 .product {
   &__inner {
+    display: flex;
+    justify-content: space-between;
     padding: 120px 0;
   }
 }
@@ -1187,12 +1189,16 @@ background-position: top center;
 
 .star {
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 10px;  
 }
 
-
-
-
+.products__images-grid {
+   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 380px);
+  grid-column-gap: 30px;
+  grid-row-gap: 40px;
+}
 
 
 
