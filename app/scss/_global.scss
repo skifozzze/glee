@@ -92,9 +92,7 @@ body {
  &__item {  
    margin-right: 15px;
  } 
-
-  
-  
+    
   &__link {
     display: block;
     line-height: 14px;
@@ -103,11 +101,11 @@ body {
     height: 50px;
     border: 1px solid $green;
     text-align: center;
-    padding: 15px 0;
+    padding: 17px 0;
     &--active {
      background-color: $green; 
      color: #fff;   
-  }
+    }
   }  
                               
  &__next {
@@ -118,6 +116,6 @@ body {
    width: 74px;
    height: 50px;
    border: 1px solid $green;
- }
+  }
 }
 

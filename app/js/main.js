@@ -17,7 +17,15 @@ $(function () {
     starWidth: "11px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
-    spacing: "3px",
+    spacing: "7px",
+    readOnly: true
+  });
+
+   $(".star-line").rateYo({    
+    starWidth: "18px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    spacing: "13px",
     readOnly: true
   });
 
