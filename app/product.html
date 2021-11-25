@@ -90,37 +90,44 @@
           <div class="product__filter filter">
             <div class="filter-category">
               <h4 class="filter__title">CATEGORY</h4>
-              <nav class="filter__category-menu">
-                <ul class="filter__category-list">
-                  <li class="filter__category-item">
-                    <button class="filter__category-btn filter__btn">
-                      Chair <span>></span>
-                    </button>
-                  </li>
-                  <li class="filter__category-item">
-                    <button class="filter__category-btn filter__btn">
-                      Table <span>></span>
-                    </button>
-                  </li>
-                  <li class="filter__category-item">
-                    <button class="filter__category-btn filter__btn">
-                      Lamp <span>></span>
-                    </button>
-                  </li>
-                  <li class="filter__category-item">
-                    <button class="filter__category-btn filter__btn">
-                      Watch <span>></span>
-                    </button>
-                  </li>
-                  <li class="filter__category-item">
-                    <button class="filter__category-btn filter__btn">
-                      Clock <span>></span>
-                    </button>
-                  </li>
-                </ul>
-              </nav>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Chair</span>
+                    <span>></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Table</span>
+                    <span>></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Lamp</span>
+                    <span>></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Watch</span>
+                    <span>></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Clock</span>
+                    <span>></span>
+                  </div>
+                </label>
+              </form>
             </div>
-
             <div class="filter-price">
               <h4 class="filter__title">PRICE</h4>
               <form class="price__form" action="#">
@@ -129,93 +136,121 @@
                   <p class="price__sum">$<span class="price__label-from"></span></p>
                   <p class="price__sum">$<span class="price__label-to"></span></p>
                 </label>
-
               </form>
             </div>
-
-            <div class="filter-brand">
+            <div class="filter-brand filter">
               <h4 class="filter__title">BRAND</h4>
-              <nav class="filter__brand-menu">
-                <ul class="filter__brand-list">
-                  <li class="filter__brand-item">
-                    <button class="filter__brand-btn filter__btn">
-                      RFL <span>(10)</span>
-                    </button>
-                  </li>
-                  <li class="filter__brand-item">
-                    <button class="filter__brand-btn filter__btn">
-                      Brothers <span>(21)</span>
-                    </button>
-                  </li>
-                  <li class="filter__brand-item">
-                    <button class="filter__brand-btn filter__btn">
-                      Regal <span>(3)</span>
-                    </button>
-                  </li>
-                  <li class="filter__brand-item">
-                    <button class="filter__brand-btn filter__btn">
-                      Nadia <span>(14)</span>
-                    </button>
-                  </li>
-                  <li class="filter__brand-item">
-                    <button class="filter__brand-btn filter__btn">
-                      Otobi <span>(6)</span>
-                    </button>
-                  </li>
-                </ul>
-              </nav>
+              <form class="filter-brand__form" action="#">
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>RFL</span>
+                    <span>(10)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Brothers</span>
+                    <span>(21)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Regal</span>
+                    <span>(3)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Nadia</span>
+                    <span>(14)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Otobi</span>
+                    <span>(6)</span>
+                  </div>
+                </label>
+              </form>
             </div>
-
-            <div class="filter-recent">
+            <div class="recent">
               <h4 class="filter__title">RECENT PRODUCTS</h4>
               <div class="recent__inner">
-                <a class="recent__image" href="#">
-                  <img class="recent__img" src="images/recent/1.png" alt="Product icon.">
-                </a>
-                <div class="recent__description">
-                  <a class="recent__description-title" href="#">
-                    <h6 class="recent__description-text">Pendant lamp</h6>
-                  </a>
-                  <div class="star" data-rateyo-rating='4'></div>
-                  <h5 class="recent__description-sum">23$</h5>
+                <div class="recent__box">
+                  <div class="recent__item">
+                    <a class="recent__image" href="#">
+                      <img class="recent__img" src="images/mission-bg.jpg" alt="Product icon.">
+                    </a>
+                  </div>
+                  <div class="recent__description">
+                    <a class="recent__description-name" href="#">
+                      <h6 class="recent__description-title">Pendant lamp</h6>
+                    </a>
+                    <div class="star" data-rateyo-rating='4'></div>
+                    <h5 class="recent__description-sum">23$</h5>
+                  </div>
+                </div>
+                <div class="recent__box">
+                  <div class="recent__item">
+                    <a class="recent__image" href="#">
+                      <img class="recent__img" src="images/mission-bg.jpg" alt="Product icon.">
+                    </a>
+                  </div>
+                  <div class="recent__description">
+                    <a class="recent__description-name" href="#">
+                      <h6 class="recent__description-title">Pendant lamp</h6>
+                    </a>
+                    <div class="star" data-rateyo-rating='4'></div>
+                    <h5 class="recent__description-sum">23$</h5>
+                  </div>
+                </div>
+                <div class="recent__box">
+                  <div class="recent__item">
+                    <a class="recent__image" href="#">
+                      <img class="recent__img" src="images/mission-bg.jpg" alt="Product icon.">
+                    </a>
+                  </div>
+                  <div class="recent__description">
+                    <a class="recent__description-name" href="#">
+                      <h6 class="recent__description-title">Pendant lamp</h6>
+                    </a>
+                    <div class="star" data-rateyo-rating='4'></div>
+                    <h5 class="recent__description-sum">23$</h5>
+                  </div>
                 </div>
               </div>
             </div>
-
-
           </div>
 
-
-          <div class="product__content content"></div>
-        </div>
-      </div>
-    </section>
-
-
-    <div class="partner">
-      <div class="container__small">
-        <div class="partner__inner partner__inner__login">
-          <ul class="partner__list partner__list__login">
-            <li class="partner__item">
-              <img class="partner__logo" src="images/partner/1.png" alt="Partner logo.">
-            </li>
-            <li class="partner__item">
-              <img class="partner__logo" src="images/partner/2.png" alt="Partner logo.">
-            </li>
-            <li class="partner__item">
-              <img class="partner__logo" src="images/partner/3.png" alt="Partner logo.">
-            </li>
-            <li class="partner__item">
-              <img class="partner__logo" src="images/partner/4.png" alt="Partner logo.">
-            </li>
-            <li class="partner__item">
-              <img class="partner__logo" src="images/partner/5.png" alt="Partner logo.">
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
+          <div class="product__content content">
+            < /div> </div> </div> </section> <div class="partner">
+              <div class="container__small">
+                <div class="partner__inner partner__inner__login">
+                  <ul class="partner__list partner__list__login">
+                    <li class="partner__item">
+                      <img class="partner__logo" src="images/partner/1.png" alt="Partner logo.">
+                    </li>
+                    <li class="partner__item">
+                      <img class="partner__logo" src="images/partner/2.png" alt="Partner logo.">
+                    </li>
+                    <li class="partner__item">
+                      <img class="partner__logo" src="images/partner/3.png" alt="Partner logo.">
+                    </li>
+                    <li class="partner__item">
+                      <img class="partner__logo" src="images/partner/4.png" alt="Partner logo.">
+                    </li>
+                    <li class="partner__item">
+                      <img class="partner__logo" src="images/partner/5.png" alt="Partner logo.">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
 
   </main>
 
