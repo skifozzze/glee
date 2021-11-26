@@ -1,9 +1,22 @@
 $(function () {
 
-  $('.customer-pannel__link-cart').on('click', function () {
+  $('.customer-pannel__link-cart-first').on('click', function () {
     $('.customer-pannel__line-first').addClass('customer-pannel__line-first--active');
-     $('.customer-pannel__line-button').addClass('customer-pannel__line-button--active');    
+    $('.customer-pannel__line-add').addClass('customer-pannel__line-add--active');   
   })
+
+  $('.customer-pannel__link-cart').on('click', function () {
+    $('.customer-pannel__line-first').removeClass('customer-pannel__line-first--active');
+    $('.customer-pannel__line-add').removeClass('customer-pannel__line-add--active');   
+  })
+
+  $('.customer-pannel__line-add').on('click', function () {
+    $('.customer-pannel__line-first').removeClass('customer-pannel__line-first--active');
+    $('.customer-pannel__line-add').removeClass('customer-pannel__line-add--active');   
+  })
+
+
+  
    
   $('.price__input').ionRangeSlider({
     type: "double",
