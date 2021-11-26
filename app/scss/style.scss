@@ -18,10 +18,11 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    margin-left: 160px;
   }
 
   &__list-item+.menu__list-item {
-   margin-left: 37px;
+   margin-left: 30px;
   }
  
   &__list-link {
@@ -449,8 +450,7 @@
 
   &__images-image {
     display: inline-block;
-    margin-bottom: 45px;
-    object-fit: cover;
+    margin-bottom: 45px;    
 
     &__line {
       width: 100%;
@@ -528,7 +528,7 @@
       align-items: center;
     }
   }
-  
+   
   &__link {
     display: block;
     margin: 0 10px;
@@ -723,6 +723,8 @@ background-position: top center;
 
   &__main-photo {
     margin-bottom: 30px;
+    width: 370px;
+    height: 250px;
     object-fit: cover;
   }
 
@@ -1033,6 +1035,8 @@ background-position: top center;
   }
 
   &__photo-img {
+    width: 370px;
+    height: 320px;
     object-fit: cover;
   }
 
@@ -1291,6 +1295,142 @@ background-position: top center;
   padding: 0;
   margin-bottom: 25px;
 }
+
+.details {
+  padding: 119px 0 120px;  
+}
+
+.details-item {
+  
+  &__inner {
+    display: flex;
+  }
+
+  &__slide {
+    width: 550px;
+    margin-right: 70px;
+  }
+
+  &__content {
+    max-width: 550px;
+   padding: 30px 0 0 0;
+  }  
+
+  &__form {
+    margin-bottom: 55px;    
+  }
+
+  &__form-num {
+    @extend %rubik-400;
+    font-size: 15px;
+    line-height: 45.6px;
+    color: #333;
+  }
+
+  &__form-btn {
+    width: 208px;
+    height: 53px;
+    border: none;
+    background-color: $green;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+
+  &__content-descr {
+    width: 125px;
+  }
+
+  &__descr-text {
+    line-height: 30px;
+  }
+
+  &__descr-link {
+    color: $body;
+    line-height: 30px;
+  }
+}
+
+.details-slide {
+  display: flex;
+  &__small {
+    width: 138px;
+    margin-right: 30px;   
+  }
+
+  &__small-item {
+    width: 138px;
+    height: 160px;    
+    margin-bottom: 18px;
+    border: 2px solid #f2f2f2;    
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__big {
+    width: 387px;
+    height: 530px;
+    border: 2px solid #f2f2f2;     
+  }
+
+  &__big-item {    
+    text-align: center;    
+    padding: 60px 0;
+  }
+}
+
+.jq-number__field {
+ width: 53px;
+ border: solid 1px #a3bbc8;
+ border-radius: 0;
+ margin-left: 50px;
+
+  input {
+   height: 53px;
+   text-align: center;
+   @extend %rubik-400;
+   font-size: 15px;
+   line-height: 45.6px;   
+    }
+ }
+
+ .jq-number__spin {
+   width: 50px;
+   height: 55px; 
+   border: solid 1px #a3bbc8;
+   border-radius: 0;   
+   background-color: #fff;
+ }
+
+ .jq-number__spin.plus{
+  background-color: #fff;
+  border-radius: 0;
+  right: -13px; 
+
+  &:after {
+   content: '+';
+   border: none;
+   left: 17px;
+  }
+}
+
+ .jq-number__spin.minus {
+   right: 88px;
+   border-radius: 0;   
+
+   &:after {
+     content: '-';
+     border: none;
+     left: 20px;
+     top: 5px;
+   }
+ }
+
+
+
 
 
 
