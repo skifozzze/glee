@@ -487,6 +487,7 @@
 
   &__images-text__line {
     line-height: 30px;
+    margin-bottom: 34px;
   }
 }
 
@@ -502,7 +503,30 @@
 
   &__line {
     justify-content: left;  
-    top: 130px;    
+    top: 130px; 
+
+    &-first--active{
+     display: none;        
+    }     
+  }
+
+  &__line-button {
+    display: none;
+
+    &--active {
+      width: 208px;
+      height: 50px;
+      background-color:$green;
+      border-radius: 5px;
+      text-transform: uppercase;
+      font-size: 15px;
+      line-height: 30px;
+      letter-spacing: 1.13px;
+      color: #fff;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   
   &__link {
@@ -521,9 +545,8 @@
       display: flex;
       justify-content: center;
       align-items: center;  
-      margin: 0 11px 0 0;   
+      margin: 0 11px 0 0;       
     }   
-
   }
 
   &__link {
@@ -538,6 +561,14 @@
     background-color: $green;    
   }
 }
+
+// .customer-pannel__link-cart--active {
+ 
+//   .customer-pannel {
+//     display: none;
+//   };
+// }
+
 
 .mixitup-control-active {
   color: #1a1a1a;

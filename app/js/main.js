@@ -1,5 +1,10 @@
 $(function () {
-  
+
+  $('.customer-pannel__link-cart').on('click', function () {
+    $('.customer-pannel__line-first').addClass('customer-pannel__line-first--active');
+     $('.customer-pannel__line-button').addClass('customer-pannel__line-button--active');    
+  })
+   
   $('.price__input').ionRangeSlider({
     type: "double",
     prefix: "$",
@@ -21,7 +26,7 @@ $(function () {
     readOnly: true
   });
 
-   $(".star-line").rateYo({    
+  $(".star-line").rateYo({    
     starWidth: "18px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
