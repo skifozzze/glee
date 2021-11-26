@@ -421,7 +421,7 @@
   &__images-description__line {
     max-width: 407px;
     width: 100%;
-    padding: 92px 0 71px;
+    padding: 92px 0 60px;
     position: relative;
   }
 
@@ -510,7 +510,7 @@
     }     
   }
 
-  &__line-button {
+  &__line-add {
     display: none;
 
     &--active {
@@ -561,14 +561,6 @@
     background-color: $green;    
   }
 }
-
-// .customer-pannel__link-cart--active {
- 
-//   .customer-pannel {
-//     display: none;
-//   };
-// }
-
 
 .mixitup-control-active {
   color: #1a1a1a;
