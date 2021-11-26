@@ -79,3 +79,43 @@ body {
   }
 }
 
+.pagination {
+  padding-top: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+ 
+ &__list {
+   display: flex;  
+ }
+
+ &__item {  
+   margin-right: 15px;
+ } 
+    
+  &__link {
+    display: block;
+    line-height: 14px;
+    color: $body;
+    width: 50px;
+    height: 50px;
+    border: 1px solid $green;
+    text-align: center;
+    padding: 17px 0;
+    &--active {
+     background-color: $green; 
+     color: #fff;   
+    }
+  }  
+                              
+ &__next {
+   line-height: 14px;
+   color: $body;
+   text-align: center;
+   padding: 17px 0;
+   width: 74px;
+   height: 50px;
+   border: 1px solid $green;
+  }
+}
+
