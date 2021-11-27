@@ -207,7 +207,7 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    padding: 30px 0;    
+    padding: 18px 0;    
   }
 
   &__copy {
@@ -471,11 +471,7 @@
   &__images-name {
     @extend %dmsans-500;
     font-size: 16px;
-    line-height: 40px;   
-    
-    &__line {     
-      margin-bottom: 25px;
-    }
+    line-height: 40px;      
   }
 
   &__images-link__line {
@@ -483,7 +479,8 @@
     @extend %rubik-400;
     font-size: 40px;
     line-height: 26.4px;
-    color: #333;    
+    color: #333;  
+    margin-bottom: 25px;  
   }
 
   &__images-price {
@@ -593,13 +590,12 @@
 
   &__item {
     display: flex;
-    justify-content: space-evenly ; 
+    // justify-content: space-evenly ; 
     background-color: rgba(252, 215, 182, 0.4);
   }
 
   &__item-img {
-    margin-top: -100px;
-    margin-right: 0px;
+    margin-top: -100px;   
   }
   
   &__item-description {
@@ -609,6 +605,7 @@
     justify-content: center;
     float: right;
     margin-right: 20px;
+    margin-left: 70px;
   }
 
   &__item-description__title {
@@ -1363,7 +1360,7 @@ background-position: top center;
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: 25px;
   }
 
   &__content-descr {
@@ -1410,13 +1407,15 @@ background-position: top center;
 }
 
 .jq-number__field {
- width: 53px;
+ width: 50px;
+ height: 53px;
  border: solid 1px #a3bbc8;
  border-radius: 0;
  margin-left: 50px;
 
   input {
    height: 53px;
+   width: 50px;
    text-align: center;
    @extend %rubik-400;
    font-size: 15px;
@@ -1426,14 +1425,17 @@ background-position: top center;
 
  .jq-number__spin {
    width: 50px;
-   height: 55px; 
+   height: 53px; 
    border: solid 1px #a3bbc8;
    border-radius: 0;   
-   background-color: #fff;
+   background: transparent;
+   &:hover {
+     background: transparent;
+   }
  }
 
  .jq-number__spin.plus{
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 0;
   right: -13px; 
 
@@ -1445,16 +1447,67 @@ background-position: top center;
 }
 
  .jq-number__spin.minus {
-   right: 88px;
+   right: 85px;
    border-radius: 0;   
 
    &:after {
      content: '-';
      border: none;
      left: 20px;
-     top: 5px;
+     top: 3px;
    }
  }
+
+ .related {
+   &__inner {
+     padding: 11px 0;
+   }
+
+   &__title {
+     margin-bottom: 70px;
+   }
+
+   &-slider {
+
+   }
+
+   &-slider__item {
+
+    // column-gap: 78px;
+    //  flex-wrap: wrap;
+    //   row-gap: 0px;
+     width: 270px;
+     height: 380px;
+     border: 2px solid red;
+     box-shadow: none;
+    //  margin: 0 -15px;
+    // //  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    //  display: flex;
+    //  flex-direction: column;
+   }
+
+       
+ }
+
+// .slick-slide  {
+//   padding: 0 15px;
+// }
+
+.slider_wrap * {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.slick-slide {
+  margin: 0 10px;
+}
+
+.slider-item img {
+  max-width: 100%;
+}
+
+ 
 
 
 

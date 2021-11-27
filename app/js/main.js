@@ -16,6 +16,13 @@ $(function () {
     fade: true
   });
 
+  $('.related-slider').slick({
+    // centerMode: true,
+    slidesToShow: 4,     
+    // variableWidth: true,
+  })
+
+
   $('.details-item__form-num').styler();
   
 
