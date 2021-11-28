@@ -1424,9 +1424,9 @@ background-position: top center;
    font-size: 15px;
    line-height: 45.6px;   
     }
- }
+}
 
- .jq-number__spin {
+.jq-number__spin {
    width: 50px;
    height: 53px; 
    border: solid 1px #a3bbc8;
@@ -1435,9 +1435,9 @@ background-position: top center;
    &:hover {
      background: transparent;
    }
- }
+}
 
- .jq-number__spin.plus{
+.jq-number__spin.plus{
   background-color: transparent;
   border-radius: 0;
   right: -13px; 
@@ -1449,66 +1449,67 @@ background-position: top center;
   }
 }
 
- .jq-number__spin.minus {
-   right: 85px;
-   border-radius: 0;   
+.jq-number__spin.minus {
+  right: 85px;
+  border-radius: 0;   
 
-   &:after {
-     content: '-';
-     border: none;
-     left: 20px;
-     top: 3px;
-   }
- }
+  &:after {
+    content: '-';
+    border: none;
+    left: 20px;
+    top: 3px;
+  }
+}
+ 
+.related {
+  &__inner {
+    padding: 11px 0;
+  }
 
- .related {
-   &__inner {
-     padding: 11px 0;
-   }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  
+  &-slider__box {   
+    margin: 15px 0;       
+  }
 
-   &__title {
-     margin-bottom: 70px;
-   }
-
-   &-slider {
-
-   }
-
-   &-slider__item {
-
-    // column-gap: 78px;
-    //  flex-wrap: wrap;
-    //   row-gap: 0px;
-     width: 270px;
-     height: 380px;
-     border: 2px solid red;
-     box-shadow: none;
-    //  margin: 0 -15px;
-    // //  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
-    //  display: flex;
-    //  flex-direction: column;
-   }
-
-       
- }
-
-// .slick-slide  {
-//   padding: 0 15px;
-// }
-
-.slider_wrap * {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  &-slider__item {   
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    width: 270px;
+    height: 380px;        
+  }   
+  
+  &__button {
+    display: flex;          
+  }
 }
 
 .slick-slide {
   margin: 0 10px;
 }
 
-.slider-item img {
-  max-width: 100%;
+.prev__btn,
+.next__btn {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid rgba(163, 187, 200, 0.2);
+  margin-left: 20px;
+
+  &--active {
+    border: 2px solid $green;
+  }
 }
+
+
 
  
 
