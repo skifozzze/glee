@@ -1328,7 +1328,7 @@ background-position: top center;
 .details-item {
   
   &__inner {
-    display: flex;
+    display: flex;    
   }
 
   &__slide {
@@ -1458,10 +1458,62 @@ background-position: top center;
     top: 3px;
   }
 }
+
+.details-tabs {
+  padding-top: 90px;
+
+  &__top {
+    display: flex;
+    margin: 0 0 39px 165px;   
+  } 
+
+  &__top-number {
+    margin-left: 5px;
+  }
+  
+  &__top-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 241px;
+    height: 53px;
+    background-color: rgba(163, 187, 200, 0.2);
+    border-radius: 5px;
+    @extend %rubik-500;
+    font-size: 18px;
+    line-height: 40;
+    color: $body;
+
+    &--active {
+      color: #fff;
+      background-color: $green;
+    }
+  }
+
+  &__top-item+.details-tabs__top-item {
+    margin-left: 13px;
+  }
+
+  &__content-item {
+    display: none;
+
+    &.details-tabs__content-item--active{
+      display: block;
+    }
+  }
+
+  &__content-text {
+    line-height: 30px;
+  }
+
+
+}
  
+
+
 .related {
   &__inner {
-    padding: 11px 0;
+    padding: 8px 0 11px;
   }
 
   &__top {
