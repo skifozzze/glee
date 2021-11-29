@@ -516,36 +516,11 @@
   right: 0;
   transform: translateY(500%); 
   transition: all .5s;
-
+  
   &__line {
     justify-content: left;  
     top: 130px; 
-
-    &-first--active{
-     display: none;        
-    }     
-  }
-
-  &__line-add {
-    display: none;
-
-    &--active {
-      width: 208px;
-      height: 50px;
-      background-color:$green;
-      border-radius: 5px;
-      text-transform: uppercase;
-      font-size: 15px;
-      line-height: 30px;
-      letter-spacing: 1.13px;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: none;
-      cursor: pointer;
-    }
-  }
+  }    
    
   &__link {
     display: block;
@@ -578,6 +553,29 @@
       fill: #fff;
     }
     background-color: $green;    
+  }
+}
+
+//hover or active?? 
+
+.customer-pannel__link-cart--active {  
+  width: 208px;
+  height: 50px;
+  background-color:$green;
+  border-radius: 5px;  
+  position: absolute;
+
+  svg {
+    display: none;
+  }
+
+  &::before {
+    content: 'add to cart';
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 1.13px;
+    color: #fff;    
   }
 }
 
@@ -1512,22 +1510,6 @@ background-position: top center;
 
 
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
