@@ -289,7 +289,7 @@
     max-width: 360px;
     font-size: 18px;
     line-height: 30px;
-    color: #436372;
+    color: $accent;
     margin-bottom: 37px;
   }
 
@@ -781,6 +781,7 @@ background-position: top center;
     
     &-img {
       margin-right: 5px;
+      margin-bottom: 3px;
     }
 
     &-link {
@@ -1089,7 +1090,7 @@ background-position: top center;
     @extend %dmsans-700;
     font-size: 22px;
     line-height: 26px;
-    color: #436372;
+    color: $accent;
     margin-bottom: 8px;    
   }
 
@@ -1672,7 +1673,23 @@ background-position: top center;
 }
 
 .blog-details {
+
+  &__img--left {
+    width: 323px;
+    height: 210px;   
+    display: inline-block;
+    margin: 0 30px 35px 0; 
+    float: left;
+  }
   
+  &__img--rigth {
+    width: 323px;
+    height: 210px;
+    display: inline-block;
+    margin-left: 30px;     
+    float: right;
+  }
+
   &__text {
     margin-bottom: 60px;  
     h4 {
@@ -1716,24 +1733,15 @@ background-position: top center;
           left: 0;
         }
       }
-    }
-
-    &-img {
-      width: 323px;
-      height: 210px;
-      object-fit: cover;
-      display: inline-block;
-      margin-right: 30px;
-      float: left;
-    }
-  }  
-}  
+    }  
+  } 
+}
 
 .blog-details__author {
   display: flex;
   align-items: center;
-  padding: 25px 0;
-  margin-bottom: 60px;
+  padding: 25px 20px 15px 0;
+  margin-bottom: 65px;
   border-bottom: 2px solid #ebebeb;
   border-top: 2px solid #ebebeb;
   
@@ -1780,6 +1788,174 @@ background-position: top center;
   align-items: center;
   line-height: 26px;
   color: #333;
+
+  &-link {
+    margin-left: 20px;
+  }
+}
+
+.comments {
+  &__title {
+    @extend %rubik-700;
+    font-size: 16px;
+    color: $accent;
+    margin-bottom: 30px;
+  }
+}
+
+.comments__item {
+  display: flex;
+  // margin-bottom: 30px;
+  padding: 30px 0;
+
+  &-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 30px;
+  }
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  &-name {
+    font-size: 16px;
+    color: $accent;
+  }
+
+  &-date {
+    font-size: 14px;
+    color: #9e9e9e;
+  }
+
+  &-text {
+    line-height: 30px;
+    color: #565872;
+    margin-bottom: 20px;
+  }
+
+  &-link {
+    font-size: 14px;
+    color: #526278;
+    padding-right: 30px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url(../images/blog/arrow-right.svg);
+      width: 12px;
+      height: 14px;
+      top: 2px;
+      right: 13px;    
+    }
+  }
+
+  &:nth-child(odd) {
+    margin-left: 130px;
+    border-top: 2px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
+
+  }  
+}
+
+.feedback {
+  padding-top: 67px;
+
+  &__title {
+    @extend %rubik-700;
+    font-size: 24px;
+    line-height: 30px;
+    color: $accent;
+    margin-bottom: 50px;
+  }
+
+  &-form__box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &-form__input {
+    width: 400px;
+    height: 50px;    
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 20px; 
+         
+    &::placeholder {      
+      @extend %rubik-400;
+      font-size: 16px;
+      line-height: 36px;
+      color: #999;     
+    }
+    
+  }
+
+  &-form__input--active {
+    border: 1px solid $green;
+
+    &::placeholder {
+      color:#333;
+    }
+  }
+
+  &-form__input--name {
+    background-image: url(../images/blog/user-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 95%;
+  }
+
+  &-form__input--email {
+    background-image: url(../images/blog/letter-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 95%;
+  }
+
+
+  &-form__textarea {
+    background-image: url(../images/blog/message-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 790px 30px;
+    resize: none;
+    width: 100%;
+    height: 120px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;  
+
+    &::placeholder {
+      @extend %rubik-400;
+      font-size: 16px;
+      line-height: 36px;
+      color: #999;
+    }    
+  }
+
+  &-form__textarea--active {
+    border: 1px solid $green;
+
+    &::placeholder {
+      color: #333;
+    }
+  }
+
+  &-form__btn {
+   width: 190px;
+   height: 50px;
+   background-color: $green;
+   border: none;
+   cursor: pointer; 
+   font-size: 14px;
+   line-height: 21px;
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+   color: #fff;   
+   padding: 0 10px;
+  }
+
 }
 
 
