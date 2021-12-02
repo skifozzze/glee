@@ -1,5 +1,7 @@
 $(function () {
 
+
+
   $('.details-slide__small').slick({
     asNavFor: '.details-slide__big',
     focusOnSelect: true,
