@@ -1,0 +1,32 @@
+.info {
+  background-color: #fcd7b6;
+  padding: 81px 0;
+
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__item-image {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  &__item-numbers {
+    @extend %dmsans-700;
+    font-size: 36px;
+    line-height: 32px;
+
+    span {
+      display: block;
+      margin-top: 10px;
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+}

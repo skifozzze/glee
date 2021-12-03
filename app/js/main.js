@@ -53,9 +53,7 @@ $(function () {
     $(this).addClass('customer-pannel__link-cart--active');
   })
 
-  // $('.customer-pannel__link-cart--active').on('click', function () {
-  //   $(this).removeClass('customer-pannel__link-cart--active');
-  // })
+  
 
   $('.details-tabs__top-item').on('click', function (e) {
     e.preventDefault();

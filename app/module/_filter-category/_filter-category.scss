@@ -1,0 +1,26 @@
+
+.filter-category {
+  margin-bottom: 60px;
+
+  &__label {
+    cursor: pointer;
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+
+    &:checked+.filter-category__checkbox {
+      background-color: rgba(163, 187, 200, .2);
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    line-height: 43px;
+    color: $body;
+  }
+}
