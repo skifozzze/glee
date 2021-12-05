@@ -6,143 +6,188 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glee</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/login.min.css">
 </head>
 
 <body>
 
-  <header class="header">
-    <div class="container__big">
-      <div class="header__inner">
-        <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.png" alt="Logo.">
-        </a>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item"><a class="menu__list-link" href="#">home+</a>
-            </li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">about</a>
-            </li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">servises</a>
-            </li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">pages+</a>
-            </li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">news</a>
-            </li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-nav">
-          <div class="user-nav__search">
+ <header class="header">
+  <div class="container__big">
+    <div class="header__inner">
+      <a class="logo" href="#">
+        <img class="logo__img" src="images/logo.png" alt="Logo." />
+      </a>
+      <nav class="menu">
+        <button class="menu__btn">
+          <span></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">home+</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">about</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">servises</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">pages+</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">news</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-nav">
+        <div class="user-nav__search">
+          <a class="user-nav__link" href="#">
+            <img
+              class="user-nav__icon"
+              src="images/icons/search.svg"
+              alt="Search button."
+            />
+          </a>
+        </div>
+        <div class="user-nav__add">
+          <div class="user-nav__add-inner">
             <a class="user-nav__link" href="#">
-              <img class="user-nav__icon" src="images/icons/search.svg" alt="Search button.">
+              <img
+                class="user-nav__icon"
+                src="images/icons/heart.svg"
+                alt="Like button."
+              />
+              <span class="user-nav__num">0</span>
             </a>
           </div>
-          <div class="user-nav__add">
-            <div class="user-nav__add-inner">
-              <a class="user-nav__link" href="#">
-                <img class="user-nav__icon" src="images/icons/heart.svg" alt="Like button.">
-                <span class="user-nav__num">0</span>
-              </a>
-            </div>
-            <div class="user-nav__add-inner">
-              <a class="user-nav__link" href="#">
-                <img class="user-nav__icon" src="images/icons/cart.svg" alt="Buy button.">
-                <span class="user-nav__num">0</span>
-              </a>
-            </div>
-          </div>
-          <div class="user-nav__circle">
+          <div class="user-nav__add-inner">
             <a class="user-nav__link" href="#">
-              <img class="user-nav__icon" src="images/icons/circle.svg" alt="Circle button.">
+              <img
+                class="user-nav__icon"
+                src="images/icons/cart.svg"
+                alt="Buy button."
+              />
+              <span class="user-nav__num">0</span>
             </a>
           </div>
         </div>
+        <div class="user-nav__circle">
+          <a class="user-nav__link" href="#">
+            <img
+              class="user-nav__icon"
+              src="images/icons/circle.svg"
+              alt="Circle button."
+            />
+          </a>
+        </div>
       </div>
     </div>
-  </header>
+  </div>
+</header>
+
+
   <main class="main">
 
     <section class="top">
-      <div class="container__big">
-        <div class="top__inner">
-          <h3 class="top__title">Log in</h3>
-          <div class="breadcrumbs">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Home</a>
-              </li>
-              <li class="breadcrumbs__item">
-                <span class="breadcrumbs__link" href="#">Log in</span>
-              </li>
-            </ul>
-          </div>
-        </div>
+  <div class="container__big">
+    <div class="top__inner">
+      <h3 class="top__title">Log in</h3>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__link" href="#">Log in</span>
+          </li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <div class="modal">
-      <div class="container">
-        <div class="modal__inner">
-          <form class="modal__form" action="#" required>
-            <label class="modal__label">
-              Username or email address *
-              <input class="modal__input modal__input-email" type="text" required>
-            </label>
-            <label class="modal__label">
-              Password *
-              <input class="modal__input modal__input-password" type="password">
-            </label>
-            <button type="submit" class="modal__btn-login" href="#">Login</button>
-            <div class="modal__text">
-              <label class="modal__label">
-                <input type="checkbox">
-                Remember me
-              </label>
-              <a class="modal__label" href="#">
-                Lost your password?
-              </a>
-            </div>
-            <p class="modal__label modal__help">
-              Not registered? No problem
-            </p>
-            <div class="modal__create">
-              <a class="modal__create-btn" href="#">Create an account</a>
-            </div>
-          </form>
+  <div class="container">
+    <div class="modal__inner">
+      <form class="modal__form" action="#" required>
+        <label class="modal__label">
+          Username or email address *
+          <input class="modal__input modal__input-email" type="text" required />
+        </label>
+        <label class="modal__label">
+          Password *
+          <input class="modal__input modal__input-password" type="password" />
+        </label>
+        <button type="submit" class="modal__btn-login" href="#">Login</button>
+        <div class="modal__text">
+          <label class="modal__label">
+            <input type="checkbox" />
+            Remember me
+          </label>
+          <a class="modal__label" href="#"> Lost your password? </a>
         </div>
-      </div>
+        <p class="modal__label modal__help">Not registered? No problem</p>
+        <div class="modal__create">
+          <a class="modal__create-btn" href="#">Create an account</a>
+        </div>
+      </form>
     </div>
+  </div>
+</div>
+
 
     <div class="partner">
-      <div class="container">
-        <div class="partner__inner partner__inner-login">
-          <ul class="partner__list partner__list-login">
-            <li class="partner__item">
-              <img class="partner__logo" src="images/partner/1.png" alt="Partner logo.">
-            </li>
-            <li class="partner__item">
-              <img class="partner__logo" src="images/partner/2.png" alt="Partner logo.">
-            </li>
-            <li class="partner__item">
-              <img class="partner__logo" src="images/partner/3.png" alt="Partner logo.">
-            </li>
-            <li class="partner__item">
-              <img class="partner__logo" src="images/partner/4.png" alt="Partner logo.">
-            </li>
-            <li class="partner__item">
-              <img class="partner__logo" src="images/partner/5.png" alt="Partner logo.">
-            </li>
-          </ul>
-        </div>
-      </div>
+  <div class="container">
+    <div class="partner__inner partner__inner-login">
+      <ul class="partner__list partner__list-login">
+        <li class="partner__item">
+          <img
+            class="partner__logo"
+            src="images/partner/1.png"
+            alt="Partner logo."
+          />
+        </li>
+        <li class="partner__item">
+          <img
+            class="partner__logo"
+            src="images/partner/2.png"
+            alt="Partner logo."
+          />
+        </li>
+        <li class="partner__item">
+          <img
+            class="partner__logo"
+            src="images/partner/3.png"
+            alt="Partner logo."
+          />
+        </li>
+        <li class="partner__item">
+          <img
+            class="partner__logo"
+            src="images/partner/4.png"
+            alt="Partner logo."
+          />
+        </li>
+        <li class="partner__item">
+          <img
+            class="partner__logo"
+            src="images/partner/5.png"
+            alt="Partner logo."
+          />
+        </li>
+      </ul>
     </div>
-
+  </div>
+</div>
+  
 
   </main>
 
-  <footer class="footer">
+   <footer class="footer">
     <div class="container">
       <div class="footer-top">
         <div class="footer-top__inner">

@@ -1,0 +1,135 @@
+.top-slider {
+  background-image: url(../images/slider-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 45px 0;
+
+  &__inner {
+    align-items: flex-end;
+  }
+
+  &__inner-description {
+    margin-left: -13px;
+  }
+
+  &__inner-images {
+    margin-right: -13px;
+  }
+
+  &__inner-item {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 170px 14px 207px;
+  }
+
+  &__title {
+    max-width: 525px;
+    @extend %rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    max-width: 360px;
+    font-size: 18px;
+    line-height: 30px;
+    color: $accent;
+    margin-bottom: 37px;
+  }
+
+  &__btn {
+    background-color: $green;
+    font-size: 15px;
+    color: #fff;
+    padding: 21px 19px 21px 27px;
+    width: 200px;
+    height: 60px;
+    display: inline-block;
+  }
+
+  &__btn-img {
+    margin-left: 58px;
+  }
+
+  &__inner-images {
+    height: 264px;
+  }
+}
+
+.slick-slide img {
+  display: inline-block;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+
+  li {
+    button {
+      padding: 0;
+      margin: 0 5px;
+      border: none;
+      width: 30px;
+      height: 29px;
+      border-radius: 50%;
+      background-color: #fff;
+      opacity: 0.3;
+      @extend %rubik-500;
+      font-size: 11px;
+      line-height: 8.5px;
+      cursor: pointer;
+    }
+
+    &.slick-active {
+      button {
+        background-color: fff;
+        opacity: 1;
+      }
+    }
+  }
+}
+.conditions {
+  background-color: $pink;
+
+  &__inner {
+    max-width: 1470px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    height: 171px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item+&__item {
+    border-left: 1px solid #e8e4df;
+    padding-left: 150px;
+  }
+
+  &__item-description {
+    margin-left: 25px;
+  }
+
+  &__item-title {
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #414141;
+  }
+
+  &__item-text {
+    max-width: 213px;
+    @extend %dmsans-400;
+    font-style: 16px;
+    line-height: 30px;
+    color: #585858;
+  }
+}

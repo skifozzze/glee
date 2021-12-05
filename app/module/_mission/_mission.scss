@@ -1,0 +1,99 @@
+.mission {
+  &__inner {
+    padding: 120px 0;
+    display: flex;
+  }
+
+  &__image {
+    height: 100%;
+    margin-right: 48px;
+  }
+
+  &__content {
+    padding: 95px 0;
+    max-width: 552px;
+    width: 100%;
+  }
+
+  &__top {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  &__top-number {
+    @extend %rubik-700;
+    font-size: 140px;
+    line-height: 32px;
+    color: $green;
+    margin-right: 29px;
+  }
+
+  &__top-descr {
+    margin-top: -18px;
+  }
+
+  &__top-text {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  &__description {
+    position: relative;
+  }
+
+  &__description::after {
+    content: "";
+    width: 500px;
+    height: 3px;
+    background-color: rgba(9, 49, 11, 0.1);
+    position: absolute;
+    bottom: -64px;
+    left: 0px;
+  }
+
+  &__description-title {
+    @extend %dmsans-700;
+    font-size: 36px;
+    line-height: 32px;
+    margin-bottom: 50px;
+  }
+
+  &__description-text {
+    line-height: 30px;
+    margin-bottom: 64px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+
+  &__bottom-box {
+    display: flex;
+    padding-right: 30px;
+    border-right: 1px solid rgba(9, 49, 11, 0.1);
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &__bottom-image {
+    margin-right: 20px;
+  }
+
+  &__bottom-numbers {
+    @extend %dmsans-700;
+    font-size: 36px;
+    line-height: 38px;
+
+    span {
+      display: block;
+      font-size: 16px;
+      line-height: 17px;
+      color: #4c4c4c;
+    }
+  }
+}

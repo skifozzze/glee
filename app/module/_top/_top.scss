@@ -1,0 +1,16 @@
+.top {
+  background-color: rgba(163, 187, 200, .2);
+
+  &__inner {
+    text-align: center;
+    padding: 35px 0 27px;
+  }
+
+  &__title {
+    @extend %rubik-300;
+    font-size: 36px;
+    line-height: 24px;
+    color: #222933;
+    margin-bottom: 15px;
+  }
+}

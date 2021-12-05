@@ -6,223 +6,334 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glee</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/terms.min.css">
 </head>
 
 <body>
 
-  <header class="header">
-    <div class="container__big">
-      <div class="header__inner">
-        <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.png" alt="Logo.">
-        </a>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item"><a class="menu__list-link" href="#">home+</a>
-            </li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">about</a>
-            </li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">servises</a>
-            </li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">pages+</a>
-            </li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">news</a>
-            </li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-nav">
-          <div class="user-nav__search">
+ <header class="header">
+  <div class="container__big">
+    <div class="header__inner">
+      <a class="logo" href="#">
+        <img class="logo__img" src="images/logo.png" alt="Logo." />
+      </a>
+      <nav class="menu">
+        <button class="menu__btn">
+          <span></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">home+</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">about</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">servises</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">pages+</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">news</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-nav">
+        <div class="user-nav__search">
+          <a class="user-nav__link" href="#">
+            <img
+              class="user-nav__icon"
+              src="images/icons/search.svg"
+              alt="Search button."
+            />
+          </a>
+        </div>
+        <div class="user-nav__add">
+          <div class="user-nav__add-inner">
             <a class="user-nav__link" href="#">
-              <img class="user-nav__icon" src="images/icons/search.svg" alt="Search button.">
+              <img
+                class="user-nav__icon"
+                src="images/icons/heart.svg"
+                alt="Like button."
+              />
+              <span class="user-nav__num">0</span>
             </a>
           </div>
-          <div class="user-nav__add">
-            <div class="user-nav__add-inner">
-              <a class="user-nav__link" href="#">
-                <img class="user-nav__icon" src="images/icons/heart.svg" alt="Like button.">
-                <span class="user-nav__num">0</span>
-              </a>
-            </div>
-            <div class="user-nav__add-inner">
-              <a class="user-nav__link" href="#">
-                <img class="user-nav__icon" src="images/icons/cart.svg" alt="Buy button.">
-                <span class="user-nav__num">0</span>
-              </a>
-            </div>
-          </div>
-          <div class="user-nav__circle">
+          <div class="user-nav__add-inner">
             <a class="user-nav__link" href="#">
-              <img class="user-nav__icon" src="images/icons/circle.svg" alt="Circle button.">
+              <img
+                class="user-nav__icon"
+                src="images/icons/cart.svg"
+                alt="Buy button."
+              />
+              <span class="user-nav__num">0</span>
             </a>
           </div>
         </div>
+        <div class="user-nav__circle">
+          <a class="user-nav__link" href="#">
+            <img
+              class="user-nav__icon"
+              src="images/icons/circle.svg"
+              alt="Circle button."
+            />
+          </a>
+        </div>
       </div>
     </div>
-  </header>
+  </div>
+</header>
+
 
   <main class="main">
 
     <section class="top">
-      <div class="container__big">
-        <div class="top__inner">
-          <h3 class="top__title">Terms & Conditions</h3>
-          <div class="breadcrumbs">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Home</a>
-              </li>
-              <li class="breadcrumbs__item">
-                <span class="breadcrumbs__link" href="#">Terms & Conditions</span>
-              </li>
-            </ul>
-          </div>
-        </div>
+  <div class="container__big">
+    <div class="top__inner">
+      <h3 class="top__title">Terms & Conditions</h3>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__link" href="#">Terms & Conditions</span>
+          </li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <section class="terms">
-      <div class="terms__inner">
-        <div class="terms__item">
-          <h4 class="terms__item-title">Types of Personal Information We Collect</h4>
-          <ol class="terms__item-list">
-            <li class="terms__item-text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-            </li>
-            <li class="terms__item-text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-            </li>
-            <li class="terms__item-text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </li>
-            <li class="terms__item-text">Dagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
-            </li>
-            <li class="terms__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            </li>
-          </ol>
-        </div>
-        <div class="terms__item">
-          <h4 class="terms__item-title">How marketpmss.com Collects Personal Infonnation</h4>
-          <p class="terms__item-text">
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-          </p>
-        </div>
-        <div class="terms__item">
-          <h4 class="terms__item-title">How marketprosscom Uses Personal Information</h4>
-          <p class="terms__item-text">
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-          </p>
-        </div>
-      </div>
-    </section>
+  <div class="terms__inner">
+    <div class="terms__item">
+      <h4 class="terms__item-title">
+        Types of Personal Information We Collect
+      </h4>
+      <ol class="terms__item-list">
+        <li class="terms__item-text">
+          Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore
+        </li>
+        <li class="terms__item-text">
+          Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore
+        </li>
+        <li class="terms__item-text">
+          Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua.
+        </li>
+        <li class="terms__item-text">
+          Dagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </li>
+        <li class="terms__item-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod
+        </li>
+      </ol>
+    </div>
+    <div class="terms__item">
+      <h4 class="terms__item-title">
+        How marketpmss.com Collects Personal Infonnation
+      </h4>
+      <p class="terms__item-text">
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore
+      </p>
+    </div>
+    <div class="terms__item">
+      <h4 class="terms__item-title">
+        How marketprosscom Uses Personal Information
+      </h4>
+      <p class="terms__item-text">
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore
+      </p>
+    </div>
+  </div>
+</section>
+
 
     <section class="articles">
-      <div class="articles__inner">
-        <div class="articles-content">
-          <div class="container">
-            <div class="articles-content__top">
-              <h4 class="articles-content__title title">
-                Our Insights & Articles
-              </h4>
-              <a class="articles-content__link" href="#">
-                View All <span>></span>
-              </a>
-            </div>
-            <div class="articles-content__main">
-              <div class="articles-content__main-item">
-                <img class="articles-content__main-photo" src="images/articles/1.jpg" alt="articles">
-                <a class="articles-content__main-btn" href="#">NEWS</a>
-                <a class="articles-content__main-title" href="#">
-                  Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                  enim ad minim veniam
-                </a>
-                <div class="articles-content__descr">
-                  <div class="articles-content__box">
-                    <img class="articles-content__box-img" src="images/articles/calendar.svg" alt="Icon calendar.">
-                    <a class="articles-content__box-link" href="#">28 JANUARY, 2020</a>
-                  </div>
-                  <div class="articles-content__box">
-                    <img class="articles-content__box-img" src="images/articles/user.svg" alt="Icon user.">
-                    <a class="articles-content__box-link" href="#">BY ADMIN</a>
-                  </div>
-                </div>
+  <div class="articles__inner">
+    <div class="articles-content">
+      <div class="container">
+        <div class="articles-content__top">
+          <h4 class="articles-content__title title">Our Insights & Articles</h4>
+          <a class="articles-content__link" href="#">
+            View All <span>></span>
+          </a>
+        </div>
+        <div class="articles-content__main">
+          <div class="articles-content__main-item">
+            <img
+              class="articles-content__main-photo"
+              src="images/articles/1.jpg"
+              alt="articles"
+            />
+            <a class="articles-content__main-btn" href="#">NEWS</a>
+            <a class="articles-content__main-title" href="#">
+              Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </a>
+            <div class="articles-content__descr">
+              <div class="articles-content__box">
+                <img
+                  class="articles-content__box-img"
+                  src="images/articles/calendar.svg"
+                  alt="Icon calendar."
+                />
+                <a class="articles-content__box-link" href="#"
+                  >28 JANUARY, 2020</a
+                >
               </div>
-              <div class="articles-content__main-item">
-                <img class="articles-content__main-photo" src="images/articles/2.jpg" alt="articles">
-                <a class="articles-content__main-btn" href="#">NEWS</a>
-                <a class="articles-content__main-title" href="#">
-                  Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                </a>
-                <div class="articles-content__descr">
-                  <div class="articles-content__box">
-                    <img class="articles-content__box-img" src="images/articles/calendar.svg" alt="Icon calendar.">
-                    <a class="articles-content__box-link" href="#">28 JANUARY, 2020</a>
-                  </div>
-                  <div class="articles-content__box">
-                    <img class="articles-content__box-img" src="images/articles/user.svg" alt="Icon user.">
-                    <a class="articles-content__box-link" href="#">BY ADMIN</a>
-                  </div>
-                </div>
-              </div>
-              <div class="articles-content__main-item">
-                <img class="articles-content__main-photo" src="images/articles/3.jpg" alt="articles">
-                <a class="articles-content__main-btn" href="#">NEWS</a>
-                <a class="articles-content__main-title" href="#">
-                  Rncididunt ut labore et dolore magna aliqua. Ut enim
-                </a>
-                <div class="articles-content__descr">
-                  <div class="articles-content__box">
-                    <img class="articles-content__box-img" src="images/articles/calendar.svg" alt="Icon calendar.">
-                    <a class="articles-content__box-link" href="#">28 JANUARY, 2020</a>
-                  </div>
-                  <div class="articles-content__box">
-                    <img class="articles-content__box-img" src="images/articles/user.svg" alt="Icon user.">
-                    <a class="articles-content__box-link" href="#">BY ADMIN</a>
-                  </div>
-                </div>
+              <div class="articles-content__box">
+                <img
+                  class="articles-content__box-img"
+                  src="images/articles/user.svg"
+                  alt="Icon user."
+                />
+                <a class="articles-content__box-link" href="#">BY ADMIN</a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="partner">
-      <div class="container">
-        <div class="partner__inner">
-          <ul class="partner__list">
-            <li class="partner__item">
-              <img class="partner__logo" src="images/partner/1.png" alt="Partner logo.">
-            </li>
-            <li class="partner__item">
-              <img class="partner__logo" src="images/partner/2.png" alt="Partner logo.">
-            </li>
-            <li class="partner__item">
-              <img class="partner__logo" src="images/partner/3.png" alt="Partner logo.">
-            </li>
-            <li class="partner__item">
-              <img class="partner__logo" src="images/partner/4.png" alt="Partner logo.">
-            </li>
-            <li class="partner__item">
-              <img class="partner__logo" src="images/partner/5.png" alt="Partner logo.">
-            </li>
-          </ul>
+          <div class="articles-content__main-item">
+            <img
+              class="articles-content__main-photo"
+              src="images/articles/2.jpg"
+              alt="articles"
+            />
+            <a class="articles-content__main-btn" href="#">NEWS</a>
+            <a class="articles-content__main-title" href="#">
+              Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore
+            </a>
+            <div class="articles-content__descr">
+              <div class="articles-content__box">
+                <img
+                  class="articles-content__box-img"
+                  src="images/articles/calendar.svg"
+                  alt="Icon calendar."
+                />
+                <a class="articles-content__box-link" href="#"
+                  >28 JANUARY, 2020</a
+                >
+              </div>
+              <div class="articles-content__box">
+                <img
+                  class="articles-content__box-img"
+                  src="images/articles/user.svg"
+                  alt="Icon user."
+                />
+                <a class="articles-content__box-link" href="#">BY ADMIN</a>
+              </div>
+            </div>
+          </div>
+          <div class="articles-content__main-item">
+            <img
+              class="articles-content__main-photo"
+              src="images/articles/3.jpg"
+              alt="articles"
+            />
+            <a class="articles-content__main-btn" href="#">NEWS</a>
+            <a class="articles-content__main-title" href="#">
+              Rncididunt ut labore et dolore magna aliqua. Ut enim
+            </a>
+            <div class="articles-content__descr">
+              <div class="articles-content__box">
+                <img
+                  class="articles-content__box-img"
+                  src="images/articles/calendar.svg"
+                  alt="Icon calendar."
+                />
+                <a class="articles-content__box-link" href="#"
+                  >28 JANUARY, 2020</a
+                >
+              </div>
+              <div class="articles-content__box">
+                <img
+                  class="articles-content__box-img"
+                  src="images/articles/user.svg"
+                  alt="Icon user."
+                />
+                <a class="articles-content__box-link" href="#">BY ADMIN</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
+
+    <div class="partner">
+  <div class="container">
+    <div class="partner__inner">
+      <ul class="partner__list">
+        <li class="partner__item">
+          <img
+            class="partner__logo"
+            src="images/partner/1.png"
+            alt="Partner logo."
+          />
+        </li>
+        <li class="partner__item">
+          <img
+            class="partner__logo"
+            src="images/partner/2.png"
+            alt="Partner logo."
+          />
+        </li>
+        <li class="partner__item">
+          <img
+            class="partner__logo"
+            src="images/partner/3.png"
+            alt="Partner logo."
+          />
+        </li>
+        <li class="partner__item">
+          <img
+            class="partner__logo"
+            src="images/partner/4.png"
+            alt="Partner logo."
+          />
+        </li>
+        <li class="partner__item">
+          <img
+            class="partner__logo"
+            src="images/partner/5.png"
+            alt="Partner logo."
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+ 
   </main>
 
-  <footer class="footer">
+   <footer class="footer">
     <div class="container">
       <div class="footer-top">
         <div class="footer-top__inner">

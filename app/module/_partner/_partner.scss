@@ -1,0 +1,24 @@
+.partner {
+  background-color: $pink;
+
+  &__inner {
+    height: 437px;
+    margin-top: -171px;
+
+    &.partner__inner-login {
+      height: 251px;
+      margin-top: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 268px;
+
+   &.partner__list-login {
+      padding: 78px 0 90px;
+    }
+  }
+}

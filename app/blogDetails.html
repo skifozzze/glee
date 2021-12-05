@@ -6,62 +6,89 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glee</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/blogDetails.min.css">
 </head>
 
 <body>
 
-  <header class="header">
-    <div class="container__big">
-      <div class="header__inner">
-        <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.png" alt="Logo.">
-        </a>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item"><a class="menu__list-link" href="#">home+</a>
-            </li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">about</a>
-            </li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">servises</a>
-            </li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">pages+</a>
-            </li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">news</a>
-            </li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-nav">
-          <div class="user-nav__search">
+ <header class="header">
+  <div class="container__big">
+    <div class="header__inner">
+      <a class="logo" href="#">
+        <img class="logo__img" src="images/logo.png" alt="Logo." />
+      </a>
+      <nav class="menu">
+        <button class="menu__btn">
+          <span></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">home+</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">about</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">servises</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">pages+</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">news</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-nav">
+        <div class="user-nav__search">
+          <a class="user-nav__link" href="#">
+            <img
+              class="user-nav__icon"
+              src="images/icons/search.svg"
+              alt="Search button."
+            />
+          </a>
+        </div>
+        <div class="user-nav__add">
+          <div class="user-nav__add-inner">
             <a class="user-nav__link" href="#">
-              <img class="user-nav__icon" src="images/icons/search.svg" alt="Search button.">
+              <img
+                class="user-nav__icon"
+                src="images/icons/heart.svg"
+                alt="Like button."
+              />
+              <span class="user-nav__num">0</span>
             </a>
           </div>
-          <div class="user-nav__add">
-            <div class="user-nav__add-inner">
-              <a class="user-nav__link" href="#">
-                <img class="user-nav__icon" src="images/icons/heart.svg" alt="Like button.">
-                <span class="user-nav__num">0</span>
-              </a>
-            </div>
-            <div class="user-nav__add-inner">
-              <a class="user-nav__link" href="#">
-                <img class="user-nav__icon" src="images/icons/cart.svg" alt="Buy button.">
-                <span class="user-nav__num">0</span>
-              </a>
-            </div>
-          </div>
-          <div class="user-nav__circle">
+          <div class="user-nav__add-inner">
             <a class="user-nav__link" href="#">
-              <img class="user-nav__icon" src="images/icons/circle.svg" alt="Circle button.">
+              <img
+                class="user-nav__icon"
+                src="images/icons/cart.svg"
+                alt="Buy button."
+              />
+              <span class="user-nav__num">0</span>
             </a>
           </div>
         </div>
+        <div class="user-nav__circle">
+          <a class="user-nav__link" href="#">
+            <img
+              class="user-nav__icon"
+              src="images/icons/circle.svg"
+              alt="Circle button."
+            />
+          </a>
+        </div>
       </div>
     </div>
-  </header>
+  </div>
+</header>
+
+
   <main class="main">
 
     <section class="top">
@@ -105,10 +132,10 @@
               <h4>
                 Fonsectetur adipisicing eiusmod
               </h4>
-              <h5>
+              <h6>
                 Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                 venia Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              </h5>
+              </h6>
               <p>
                 consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet,
@@ -411,7 +438,7 @@
 
   </main>
 
-  <footer class="footer">
+   <footer class="footer">
     <div class="container">
       <div class="footer-top">
         <div class="footer-top__inner">
