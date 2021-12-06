@@ -1,0 +1,117 @@
+.product {
+  &__inner {
+    display: flex;
+    padding: 119px 0 120px
+  }
+}
+
+.products {
+
+    &__inner {
+      padding: 65px 0 185px;   
+    }
+
+    &__title {
+     margin-bottom: 25px;
+    }
+
+    &__button {
+      text-align: center;       
+      margin-bottom: 80px;    
+    }
+
+    &__btn {
+      @extend %prod__button;
+    }
+
+    &__images {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 380px);
+      grid-gap: 40px 30px; 
+
+      &-grid {      
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 380px); 
+        margin-bottom: 105px;    
+      }         
+    }
+  
+    &__images-item {
+      padding: 27px 15px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;    
+      text-align: center;
+      background-color:#fff;
+      box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+      overflow: hidden;    
+      position: relative;
+      border-radius: 10px;
+
+    }
+
+   &__images-item:hover {
+      .customer-pannel {
+       transform: translateY(0);
+      }
+   }
+
+    &__images-image {
+      display: inline-block;
+      margin-bottom: 65px;   
+    }
+
+    &__images-name {
+      @extend %dmsans-500;
+      font-size: 16px;
+      line-height: 30px;      
+    }
+
+    &__images-price {
+      @extend %dmsans-700;
+      font-size: 16px;
+      line-height: 40px;
+      color: $green;      
+    }  
+
+  }
+
+  .customer-pannel {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 177px;
+    left: 0;
+    right: 0;
+    transform: translateY(500%); 
+    transition: all .5s;
+   
+
+    &__link {
+      display: block;
+      margin: 0 6px;
+      padding: 14px;
+      border: none;
+      border-radius: 50%;
+      background-color: #fff;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+    }
+
+    &__link {
+     path {
+      transition: all .3s;}
+    }
+
+    &__link:hover {
+      path {
+        fill: #fff;
+      }
+      background-color: $green;    
+    }
+  }
+
+  
+  
