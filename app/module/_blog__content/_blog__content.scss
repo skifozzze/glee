@@ -1,0 +1,133 @@
+.blog {
+
+  &__inner {
+    padding: 119px 0 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 830px;
+    margin-right: 70px;
+  }
+
+  &-item {
+    margin-bottom: 75px;
+  }
+
+  &-item__img {
+    width: 830px;
+    height: 500px;
+    overflow: hidden;
+    object-fit: cover;
+    margin-bottom: 40px;
+  }
+
+  &-item__descr {
+    display: flex;
+    position: absolute;
+    padding: 20px 15px;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-top: -109px;
+    background-color: $green;
+    border: none;
+
+    .articles-content__box-link {
+      color: #fff;
+    }
+  }
+
+  &-item__subtitle {
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
+  &__btn {
+    color: $green;
+    border: solid 1px $green;
+    border-radius: 0px;
+  }
+
+  &__aside {
+    width: 270px;
+  }
+
+  .filter-category {
+    margin-bottom: 45px;
+  }
+}
+
+.articles-content {
+
+ &__descr {
+   display: flex;
+   padding: 20px 15px;
+   width: 275px;
+   border-top: 1px solid #e0e0e0;
+ }
+  
+  &__box {
+   display: flex;
+   margin-right: 25px;
+
+     &-img {
+     margin-right: 5px;
+     margin-bottom: 3px;
+    }
+
+    &-link {
+     text-transform: uppercase;
+     font-size: 12px;
+     line-height: 30px;
+     color: #222933;
+    }
+  }
+}
+
+.products__images-link__line {
+  display: inline-block;
+  @extend %rubik-400;
+  font-size: 40px;
+  line-height: 26.4px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.lamp {
+  &__btn {
+    background-color: transparent;   
+    font-size: 15px;   
+    padding: 23px 20px 21px;
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 12px;
+  }
+
+  &__btn-img {
+    margin-left: 38px;
+    display: inline-block;
+  }
+}
+
+.blog {
+
+  &-item__descr {
+    display: flex;
+    position: absolute;
+    padding: 20px 15px;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-top: -109px;
+    background-color: $green;
+    border: none;
+    width: 275px;
+
+    .articles-content__box-link {
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.filter-search {
+  margin-bottom: 50px;
+
+  &__form {
+    height: 45px;
+    display: flex;
+    border: 1px solid #edf1f4;
+    border-radius: 5px;
+  }
+
+  &__input {
+    border: none;
+    width: 220px;
+    padding: 10px;
+  }
+
+  &__btn {
+    width: 48px;
+    background-color: #edf1f4;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
