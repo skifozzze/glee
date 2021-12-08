@@ -118,3 +118,26 @@ body {
   }
 }
 
+
+@media (max-width: 1050px) {
+
+  .title {  
+  font-size: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 560px) {
+
+  .title {
+    font-size: 22px;
+  }
+}
+
+

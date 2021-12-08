@@ -149,6 +149,10 @@
 @media (max-width: 1050px) {
   .footer-top {
 
+    &__inner {
+      padding: 50px 0 50px;
+    }
+
     &__contact {
       width: 100%;
     }
@@ -167,6 +171,10 @@
     &__phone,
     &__mail {
       display: block;
+    } 
+    
+    &__inner {
+    padding: 30px 0 30px;
     }
   }
 

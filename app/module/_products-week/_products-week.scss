@@ -17,14 +17,15 @@
   }
 
   &__images {
+    
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 380px);
+    grid-template-columns: repeat(4, 1fr);    
     grid-gap: 40px 30px;   
   }
   
   &__images-item {
-    padding: 27px 15px 20px;
+    height: 380px;
+    padding: 27px 15px 26px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -101,4 +102,84 @@
 
 .mixitup-control-active {
   color: #1a1a1a;
+}
+
+@media (max-width: 1050px) {
+
+  .products {
+
+    &__inner {
+      padding: 65px 0 100px;
+    }
+
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__images {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 25px;      
+    }
+  }
+}
+
+@media (max-width: 860px) {
+
+  .products {
+
+    &__images {
+      grid-template-columns: repeat(2, 1fr);   
+    }
+  }
+}
+
+@media (max-width: 640px) {
+
+  .products {
+
+    &__inner {
+      padding: 50px 0 50px;
+    }
+
+    &__title {
+    margin-bottom: 10px;
+    }  
+    
+    &__button {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+
+  .products {
+
+    &__inner {
+      padding: 30px 0 30px;
+    }
+
+    &__images {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 15px;
+    }
+
+    &__images-image {
+      margin-bottom: 20px;
+    }
+
+    &__images-item {
+      height: 315px;
+      padding: 5px;
+    }
+
+    &__button {
+      margin-bottom: 20px;
+    }
+
+    &__btn {
+      font-size: 14px;
+      margin: 0 15px 10px 15px;
+    }
+  }
 }
