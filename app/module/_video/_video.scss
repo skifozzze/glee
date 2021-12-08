@@ -11,3 +11,23 @@
     align-items: center;
   }
 }
+
+@media (max-width: 1050px) {
+
+  .articles-video {
+
+    &__popup {   
+     height: 350px;    
+    }
+  }
+}
+
+@media (max-width: 650px) {
+
+  .articles-video {
+
+    &__popup {
+      height: 240px;
+    }
+  }
+}
