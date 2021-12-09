@@ -8,7 +8,7 @@
 .footer-top {
   &__inner {
     display: flex;
-    padding: 82px 0 66px;
+    padding: 82px 0 59px;
     border-bottom: 1px solid $green;   
   }
 
@@ -56,7 +56,7 @@
 
   &__text {
     line-height: 24px;
-    margin-bottom: 33px;
+    margin-bottom: 30px;
   }
 
   &__form {
@@ -101,7 +101,7 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    padding: 26px 0;
+    padding: 28px 0;
     flex-wrap: wrap;
   }
 

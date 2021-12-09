@@ -4,6 +4,7 @@
 
   &__items {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-end;
   }
@@ -29,4 +30,63 @@
       line-height: 32px;
     }
   }
+}
+
+@media (max-width: 1200px) {
+
+  .info {    
+    padding: 65px 0;
+  }
+}
+
+@media (max-width: 860px) {
+
+  .info {
+
+    padding: 30px 0;
+
+    &__item-numbers {
+      font-size: 24px;
+      line-height: 18px;
+
+      span {
+        font-size: 16px;
+        line-height: 14px;
+      }
+    }
+
+    &__item {
+     margin: 5px;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .info {
+
+    padding: 10px 0;
+
+    &__item-image {
+      width: 45px;
+      height: 45px;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .info {
+
+    padding: 5px 0;
+
+   &__item-numbers {
+     font-size: 20px;
+     line-height: 16px;
+
+     span {
+       font-size: 12px;
+       line-height: 8px;
+     }
+   }
+  }
+
 }
