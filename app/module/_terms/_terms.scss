@@ -36,3 +36,41 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+
+  .terms {
+
+    &__inner {
+      padding-top: 65px;
+    }
+
+    &__item {
+      margin-bottom: 50px;
+    }
+
+    &__item-text {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+
+  .terms {
+
+    &__inner {
+      padding-top: 50px;
+    }
+
+    &__item {
+      margin-bottom: 30px;
+    }
+
+    &__item-title {
+      font-size: 22px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+  }
+}
