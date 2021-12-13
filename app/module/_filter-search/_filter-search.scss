@@ -26,3 +26,14 @@
     align-items: center;
   }
 }
+
+@media (max-width:860px) {
+
+  .filter-search {
+    margin-bottom: 30px;
+
+    &__input {
+     width: 100%;      
+    }    
+  }
+}

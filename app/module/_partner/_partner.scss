@@ -31,10 +31,18 @@
     &__inner {
       margin-top: 65px; 
       height: auto;
+
+      &.partner__inner-login {
+        height: auto;        
+      }
     }
 
-    &__list {
+    &__list{    
       padding: 20px 10px;
+
+      &.partner__list-login {
+        padding: 20px 10px;
+      }      
     }
 
     &__item {

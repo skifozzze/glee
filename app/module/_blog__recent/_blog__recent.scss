@@ -53,3 +53,15 @@
     margin-bottom: 5px;
   }
 }
+
+@media (max-width:860px) {
+
+  .recent {
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
