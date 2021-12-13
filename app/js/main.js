@@ -18,14 +18,50 @@ $(function () {
     asNavFor: '.details-slide__small',
     draggable: false,
     arrows: false,
-    fade: true
+    fade: true,
+    responsive: [
+     {
+        breakpoint: 1051,
+        settings: {
+          draggable: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        }
+      },    
+    ]
   });
 
 
 
   $('.related-slider').slick({    
     slidesToShow: 4,
-    arrows: false,    
+    arrows: false,   
+    responsive: [
+     {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3,   
+          centerMode: true,
+          centerPadding: '20px',
+        }        
+      }, 
+      
+      {
+        breakpoint: 861,
+        settings: {
+          slidesToShow: 2,  
+          centerMode: true,
+          centerPadding: '20px',
+        }        
+      },  
+      
+      {
+        breakpoint: 561,
+        settings: {
+          slidesToShow: 1,           
+        }        
+      },    
+    ]
   })
 
   $('.prev').on('click', function() {

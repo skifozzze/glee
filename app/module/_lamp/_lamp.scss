@@ -85,16 +85,28 @@
 
   .lamp {
 
-    &__item {
-      height: 240px;    
+    &__inner {
+      flex-direction: column;
     }
 
+    &__item {
+      width: 100%;
+      margin-bottom: 10px;
+      height: 240px;
+    }
+
+    &__item+&__item {
+      margin-left: 0;
+    }
+    
     &__item-box {
       justify-content: center;
+      max-width: 100%;
     }
 
-    &__item-img {
-      display: none;
+    &__item-img {      
+      width: 100px;
+      margin-top: 0;
     }
 
     &__item-description {
@@ -117,20 +129,10 @@
 @media (max-width: 860px) {
 
   .lamp {
-
-    &__inner {
-      flex-direction: column;
-    }
-
-    &__item {
-      width: 100%;
-      margin-bottom: 10px;
+  
+    &__item {      
       height: 180px;
-    }
-
-    &__item+&__item {
-      margin-left: 0;
-    }      
+    }    
   }
 }
 
