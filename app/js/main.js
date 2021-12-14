@@ -1,5 +1,12 @@
 $(function () {
 
+  $('.filter__btn').on('click', function () {
+    $('.filter').slideToggle()
+
+  })
+
+
+
   $('.menu__btn').on('click', function () {
     $('.menu__list').toggleClass('menu__list--active')
   })
@@ -40,18 +47,14 @@ $(function () {
      {
         breakpoint: 1201,
         settings: {
-          slidesToShow: 3,   
-          centerMode: true,
-          centerPadding: '20px',
+          slidesToShow: 3, 
         }        
       }, 
       
       {
         breakpoint: 861,
         settings: {
-          slidesToShow: 2,  
-          centerMode: true,
-          centerPadding: '20px',
+          slidesToShow: 2,            
         }        
       },  
       
