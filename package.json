@@ -31,6 +31,8 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
-    "@fancyapps/fancybox": "^3.5.7"
+    "@fancyapps/fancybox": "^3.5.7",
+    "gulp-fonter": "^0.3.0",
+    "gulp-fonter-unx": "^0.3.0"
   }
 }
