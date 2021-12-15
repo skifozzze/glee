@@ -4,6 +4,7 @@ const scss            = require('gulp-sass')(require('sass'));
 const concat          = require('gulp-concat');
 const autoprefixer    = require('gulp-autoprefixer');
 const uglify          = require('gulp-uglify');
+const cssnano         = require('gulp-cssnano');
 const imagemin        = require('gulp-imagemin');
 const rename          = require('gulp-rename');
 const nunjucksRender  = require('gulp-nunjucks-render');
@@ -31,7 +32,7 @@ function nunjucks() {
 function styles() {
   return src('app/scss/*.scss')
     .pipe(scss({ outputStyle: 'compressed' }))
-    // .pipe(concat())
+    .pipe(cssnano())      
     .pipe(rename({
       suffix: '.min'
     }))
@@ -42,6 +43,7 @@ function styles() {
     .pipe(dest('app/css'))
     .pipe(browserSync.stream())
 }
+
 
 function scripts() {
   return src([
@@ -60,6 +62,7 @@ function scripts() {
   .pipe(dest('app/js'))
   .pipe(browserSync.stream())
 }
+
 
 function images() {
   return src('app/images/**/*.*')
@@ -80,7 +83,9 @@ function images() {
 function build() {
   return src([
     'app/**/*.html',
+    'app/fonts/**/*',
     'app/css/style.min.css',
+    // 'app/css/*.min.css',
     'app/js/main.min.js'
   ], {base: 'app'})
   .pipe(dest('dist'))
