@@ -5,6 +5,7 @@ const concat          = require('gulp-concat');
 const autoprefixer    = require('gulp-autoprefixer');
 const uglify          = require('gulp-uglify');
 const cssnano         = require('gulp-cssnano');
+const fonter          = require('gulp-fonter');
 const imagemin        = require('gulp-imagemin');
 const rename          = require('gulp-rename');
 const nunjucksRender  = require('gulp-nunjucks-render');
@@ -31,8 +32,8 @@ function nunjucks() {
 
 function styles() {
   return src('app/scss/*.scss')
-    .pipe(scss({ outputStyle: 'compressed' }))
-    .pipe(cssnano())      
+    .pipe(scss({ outputStyle: 'compressed' }))  
+    .pipe(cssnano())   
     .pipe(rename({
       suffix: '.min'
     }))
@@ -48,12 +49,12 @@ function styles() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
-    'node_modules/slick-carousel/slick/slick.js',
-    'node_modules/mixitup/dist/mixitup.js',
+    'node_modules/slick-carousel/slick/slick.js',    
     'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
     'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
     'node_modules/rateyo/src/jquery.rateyo.js',
     'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
+    'node_modules/mixitup/dist/mixitup.js',
     'app/js/main.js'
   ])
     
@@ -80,12 +81,21 @@ function images() {
   .pipe(dest('dist/images'))
 }
 
+function fonts () {
+  return src('app/fonts/*')
+    .pipe(fonter({
+      subset: [66,67,68, 69, 70, 71],
+      formats: ['woff', 'ttf']
+    }))
+    .pipe(dest('dist'));
+}
+
 function build() {
   return src([
     'app/**/*.html',
-    'app/fonts/**/*',
-    'app/css/style.min.css',
-    // 'app/css/*.min.css',
+    'app/fonts/*',
+    // 'app/css/style.min.css',
+    'app/css/*.min.css',
     'app/js/main.min.js'
   ], {base: 'app'})
   .pipe(dest('dist'))
@@ -109,7 +119,8 @@ exports.browsersync    = browsersync;
 exports.watching       = watching;
 exports.images         = images;
 exports.nunjucks       = nunjucks;
+exports.fonts          = fonts;
 exports.cleanDist      = cleanDist;
 exports.build          = series(cleanDist, images, build);
 
-exports.default = parallel(nunjucks, styles, scripts, browsersync, watching);
+exports.default = parallel(nunjucks, styles, fonts, scripts, browsersync, watching);
